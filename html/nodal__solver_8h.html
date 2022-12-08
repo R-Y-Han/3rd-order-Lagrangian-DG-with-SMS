@@ -1,0 +1,560 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>A 3rd-order Lagrangian DG hydrodynamic method using SMS: F:/C++Code/LagrangianDG_with_SMS/files/nodal_solver.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">A 3rd-order Lagrangian DG hydrodynamic method using SMS<span id="projectnumber">&#160;v1.01</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_e924a1110dd74e78da430196ceee4730.html">LagrangianDG_with_SMS</a></li><li class="navelem"><a class="el" href="dir_d5913d2600e8f133715c1037159f6871.html">files</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle"><div class="title">nodal_solver.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>定义节点解法器  
+<a href="#details">更多...</a></p>
+<div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="nodal__solver_8h__dep__incl.png" border="0" usemap="#a_f_1_2_c_09_09_code_2_lagrangian_d_g__with___s_m_s_2files_2nodal__solver_8hdep" alt=""/></div>
+<map name="a_f_1_2_c_09_09_code_2_lagrangian_d_g__with___s_m_s_2files_2nodal__solver_8hdep" id="a_f_1_2_c_09_09_code_2_lagrangian_d_g__with___s_m_s_2files_2nodal__solver_8hdep">
+<area shape="rect" title="定义节点解法器" alt="" coords="231,5,410,61"/>
+<area shape="rect" href="_lagrangian_d_g___s_m_s_8cpp.html" title="二维三阶Lagrangian DG格式" alt="" coords="5,109,207,165"/>
+<area shape="rect" href="nodal__solver_8cpp.html" title="节点解法器" alt="" coords="231,109,410,165"/>
+<area shape="rect" href="time__evo_8cpp.html" title=" " alt="" coords="434,117,629,158"/>
+</map>
+</div>
+</div>
+<p><a href="nodal__solver_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a2c22281007ccfde5c86ff8449178d9a9"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nodal__solver_8h.html#a2c22281007ccfde5c86ff8449178d9a9">u_average</a> (int i, int j)</td></tr>
+<tr class="memdesc:a2c22281007ccfde5c86ff8449178d9a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算第(i,j)个节点处每个相邻单元在该点的速度重构值的平均  <a href="nodal__solver_8h.html#a2c22281007ccfde5c86ff8449178d9a9">更多...</a><br /></td></tr>
+<tr class="separator:a2c22281007ccfde5c86ff8449178d9a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4b97eb78addbf951b5724d7576f8632"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nodal__solver_8h.html#aa4b97eb78addbf951b5724d7576f8632">density_SMS</a> (int i, int j)</td></tr>
+<tr class="memdesc:aa4b97eb78addbf951b5724d7576f8632"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算第(i,j)个子网格中SMS密度的修正量rho_s - rho_nus  <a href="nodal__solver_8h.html#aa4b97eb78addbf951b5724d7576f8632">更多...</a><br /></td></tr>
+<tr class="separator:aa4b97eb78addbf951b5724d7576f8632"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2478d5a90b7746785cd691cb127b41cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nodal__solver_8h.html#a2478d5a90b7746785cd691cb127b41cb">ustar_f_center</a> (int i, int j)</td></tr>
+<tr class="memdesc:a2478d5a90b7746785cd691cb127b41cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算大网格中心点的速度和corner force  <a href="nodal__solver_8h.html#a2478d5a90b7746785cd691cb127b41cb">更多...</a><br /></td></tr>
+<tr class="separator:a2478d5a90b7746785cd691cb127b41cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2410691cddae543d67ca315982966ab1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nodal__solver_8h.html#a2410691cddae543d67ca315982966ab1">nodal_velocity_corner_force</a> (int i, int j)</td></tr>
+<tr class="memdesc:a2410691cddae543d67ca315982966ab1"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算节点速度和corner force  <a href="nodal__solver_8h.html#a2410691cddae543d67ca315982966ab1">更多...</a><br /></td></tr>
+<tr class="separator:a2410691cddae543d67ca315982966ab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4835de9199776606b81e14e163b4f722"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nodal__solver_8h.html#a4835de9199776606b81e14e163b4f722">BCvelocity</a> (int i, int j, double amu)</td></tr>
+<tr class="memdesc:a4835de9199776606b81e14e163b4f722"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算边界速度  <a href="nodal__solver_8h.html#a4835de9199776606b81e14e163b4f722">更多...</a><br /></td></tr>
+<tr class="separator:a4835de9199776606b81e14e163b4f722"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae229a0de0ec04c687e45ac125eb61ba9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nodal__solver_8h.html#ae229a0de0ec04c687e45ac125eb61ba9">BCnormal_velocity</a> (int i, int j, double <a class="el" href="nodal__solver_8h.html#a4784b5a193511a74d1f552ee9ee805e3">vn</a>)</td></tr>
+<tr class="memdesc:ae229a0de0ec04c687e45ac125eb61ba9"><td class="mdescLeft">&#160;</td><td class="mdescRight">已知外法向速度  <a href="nodal__solver_8h.html#ae229a0de0ec04c687e45ac125eb61ba9">更多...</a><br /></td></tr>
+<tr class="separator:ae229a0de0ec04c687e45ac125eb61ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad93a126ddbc3e6dabbd883ceb47b41c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nodal__solver_8h.html#ad93a126ddbc3e6dabbd883ceb47b41c0">BCpressure</a> (int i, int j, double pcorlast, double pcornext)</td></tr>
+<tr class="memdesc:ad93a126ddbc3e6dabbd883ceb47b41c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">已知边界压力  <a href="nodal__solver_8h.html#ad93a126ddbc3e6dabbd883ceb47b41c0">更多...</a><br /></td></tr>
+<tr class="separator:ad93a126ddbc3e6dabbd883ceb47b41c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:a4784b5a193511a74d1f552ee9ee805e3"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nodal__solver_8h.html#a4784b5a193511a74d1f552ee9ee805e3">vn</a> = 0</td></tr>
+<tr class="memdesc:a4784b5a193511a74d1f552ee9ee805e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">外法向速度（假设已知)  <a href="nodal__solver_8h.html#a4784b5a193511a74d1f552ee9ee805e3">更多...</a><br /></td></tr>
+<tr class="separator:a4784b5a193511a74d1f552ee9ee805e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f2f5c8f3c2357af962c3887513fdfed"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nodal__solver_8h.html#a4f2f5c8f3c2357af962c3887513fdfed">Pre</a> = 0</td></tr>
+<tr class="memdesc:a4f2f5c8f3c2357af962c3887513fdfed"><td class="mdescLeft">&#160;</td><td class="mdescRight">边界压力  <a href="nodal__solver_8h.html#a4f2f5c8f3c2357af962c3887513fdfed">更多...</a><br /></td></tr>
+<tr class="separator:a4f2f5c8f3c2357af962c3887513fdfed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >定义节点解法器 </p>
+<dl class="section author"><dt>作者</dt><dd>R.Y. Han (<a href="#" onclick="location.href='mai'+'lto:'+'han'+'ru'+'oyu'+'21'+'@gs'+'ca'+'ep.'+'ac'+'.cn'; return false;">hanru<span class="obfuscator">.nosp@m.</span>oyu2<span class="obfuscator">.nosp@m.</span>1@gsc<span class="obfuscator">.nosp@m.</span>aep.<span class="obfuscator">.nosp@m.</span>ac.cn</a>) </dd></dl>
+<dl class="section version"><dt>版本</dt><dd>v1.01 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2022-12-01</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright (c) 2022 R.Y. Han. All Rights Reserved. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="nodal__solver_8h_source.html">nodal_solver.h</a> 中定义.</p>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="ae229a0de0ec04c687e45ac125eb61ba9" name="ae229a0de0ec04c687e45ac125eb61ba9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae229a0de0ec04c687e45ac125eb61ba9">&#9670;&nbsp;</a></span>BCnormal_velocity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BCnormal_velocity </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>vn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>已知外法向速度 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>节点行编号 </td></tr>
+    <tr><td class="paramname">j</td><td>节点列编号 </td></tr>
+    <tr><td class="paramname">vn</td><td>外法向速度不为0时的修正项 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="nodal__solver_8cpp_source.html">nodal_solver.cpp</a> 第 <a class="el" href="nodal__solver_8cpp_source.html#l00472">472</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad93a126ddbc3e6dabbd883ceb47b41c0" name="ad93a126ddbc3e6dabbd883ceb47b41c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad93a126ddbc3e6dabbd883ceb47b41c0">&#9670;&nbsp;</a></span>BCpressure()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BCpressure </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>pcorlast</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>pcornext</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>已知边界压力 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>节点行编号 </td></tr>
+    <tr><td class="paramname">j</td><td>节点列编号 </td></tr>
+    <tr><td class="paramname">pcorlast</td><td>上一节点的\sum(a mu) </td></tr>
+    <tr><td class="paramname">pcornext</td><td>下一节点的\sum(a mu) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="nodal__solver_8cpp_source.html">nodal_solver.cpp</a> 第 <a class="el" href="nodal__solver_8cpp_source.html#l00557">557</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4835de9199776606b81e14e163b4f722" name="a4835de9199776606b81e14e163b4f722"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4835de9199776606b81e14e163b4f722">&#9670;&nbsp;</a></span>BCvelocity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BCvelocity </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>amu</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>计算边界速度 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>节点行编号 </td></tr>
+    <tr><td class="paramname">j</td><td>节点列编号 </td></tr>
+    <tr><td class="paramname">amu</td><td>当边界条件是压力时输入的修正值 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="nodal__solver_8cpp_source.html">nodal_solver.cpp</a> 第 <a class="el" href="nodal__solver_8cpp_source.html#l00441">441</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="nodal__solver_8h_a4835de9199776606b81e14e163b4f722_icgraph.png" border="0" usemap="#anodal__solver_8h_a4835de9199776606b81e14e163b4f722_icgraph" alt=""/></div>
+<map name="anodal__solver_8h_a4835de9199776606b81e14e163b4f722_icgraph" id="anodal__solver_8h_a4835de9199776606b81e14e163b4f722_icgraph">
+<area shape="rect" title="计算边界速度" alt="" coords="355,13,437,39"/>
+<area shape="rect" href="nodal__solver_8cpp.html#a2410691cddae543d67ca315982966ab1" title="计算节点速度和corner force" alt="" coords="160,5,307,47"/>
+<area shape="rect" href="time__evo_8cpp.html#a8f07d30e8e3870951eb4b21f5f7138e1" title="进行一次时间更新" alt="" coords="5,13,112,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa4b97eb78addbf951b5724d7576f8632" name="aa4b97eb78addbf951b5724d7576f8632"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4b97eb78addbf951b5724d7576f8632">&#9670;&nbsp;</a></span>density_SMS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double density_SMS </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>j</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>计算第(i,j)个子网格中SMS密度的修正量rho_s - rho_nus </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>子网格的行编号 </td></tr>
+    <tr><td class="paramname">j</td><td>子网格的列编号 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>double </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="nodal__solver_8cpp_source.html">nodal_solver.cpp</a> 第 <a class="el" href="nodal__solver_8cpp_source.html#l00067">67</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="nodal__solver_8h_aa4b97eb78addbf951b5724d7576f8632_cgraph.png" border="0" usemap="#anodal__solver_8h_aa4b97eb78addbf951b5724d7576f8632_cgraph" alt=""/></div>
+<map name="anodal__solver_8h_aa4b97eb78addbf951b5724d7576f8632_cgraph" id="anodal__solver_8h_aa4b97eb78addbf951b5724d7576f8632_cgraph">
+<area shape="rect" title="计算第(i,j)个子网格中SMS密度的修正量rho_s &#45; rho_nus" alt="" coords="5,56,105,83"/>
+<area shape="rect" href="struct_omega.html#a3e8d54f44955dea578e8bff3b66f2537" title="Jacobi行列式" alt="" coords="153,31,280,57"/>
+<area shape="rect" href="struct_omega.html#ae9e4670a6573ed62345914db38030152" title="基函数" alt="" coords="171,81,262,108"/>
+<area shape="rect" href="config_8cpp.html#a9035555d0f5aae81503f6dd897171576" title="形函数对eta求导" alt="" coords="328,5,389,32"/>
+<area shape="rect" href="config_8cpp.html#ae6f3d29131d803a8e79ebebd60ef13c8" title="形函数对xi求导" alt="" coords="332,56,385,83"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="nodal__solver_8h_aa4b97eb78addbf951b5724d7576f8632_icgraph.png" border="0" usemap="#anodal__solver_8h_aa4b97eb78addbf951b5724d7576f8632_icgraph" alt=""/></div>
+<map name="anodal__solver_8h_aa4b97eb78addbf951b5724d7576f8632_icgraph" id="anodal__solver_8h_aa4b97eb78addbf951b5724d7576f8632_icgraph">
+<area shape="rect" title="计算第(i,j)个子网格中SMS密度的修正量rho_s &#45; rho_nus" alt="" coords="355,13,455,39"/>
+<area shape="rect" href="nodal__solver_8cpp.html#a2410691cddae543d67ca315982966ab1" title="计算节点速度和corner force" alt="" coords="160,5,307,47"/>
+<area shape="rect" href="time__evo_8cpp.html#a8f07d30e8e3870951eb4b21f5f7138e1" title="进行一次时间更新" alt="" coords="5,13,112,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2410691cddae543d67ca315982966ab1" name="a2410691cddae543d67ca315982966ab1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2410691cddae543d67ca315982966ab1">&#9670;&nbsp;</a></span>nodal_velocity_corner_force()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nodal_velocity_corner_force </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>j</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>计算节点速度和corner force </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>节点的行编号 </td></tr>
+    <tr><td class="paramname">j</td><td>节点的列编号 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>double ** </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="nodal__solver_8cpp_source.html">nodal_solver.cpp</a> 第 <a class="el" href="nodal__solver_8cpp_source.html#l00195">195</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="nodal__solver_8h_a2410691cddae543d67ca315982966ab1_cgraph.png" border="0" usemap="#anodal__solver_8h_a2410691cddae543d67ca315982966ab1_cgraph" alt=""/></div>
+<map name="anodal__solver_8h_a2410691cddae543d67ca315982966ab1_cgraph" id="anodal__solver_8h_a2410691cddae543d67ca315982966ab1_cgraph">
+<area shape="rect" title="计算节点速度和corner force" alt="" coords="5,150,152,191"/>
+<area shape="rect" href="nodal__solver_8cpp.html#a4835de9199776606b81e14e163b4f722" title="计算边界速度" alt="" coords="211,31,293,57"/>
+<area shape="rect" href="nodal__solver_8cpp.html#aa4b97eb78addbf951b5724d7576f8632" title="计算第(i,j)个子网格中SMS密度的修正量rho_s &#45; rho_nus" alt="" coords="202,81,302,108"/>
+<area shape="rect" href="struct_omega.html#ae9e4670a6573ed62345914db38030152" title="基函数" alt="" coords="527,132,617,159"/>
+<area shape="rect" href="config_8cpp.html#aa844a215177b8c6deadf3a9e09654518" title="EOS" alt="" coords="227,183,277,209"/>
+<area shape="rect" href="nodal__solver_8cpp.html#a2c22281007ccfde5c86ff8449178d9a9" title="计算第(i,j)个节点处每个相邻单元在该点的速度重构值的平均" alt="" coords="375,233,455,260"/>
+<area shape="rect" href="nodal__solver_8cpp.html#a2478d5a90b7746785cd691cb127b41cb" title="计算大网格中心点的速度和corner force" alt="" coords="200,284,304,311"/>
+<area shape="rect" href="struct_omega.html#a3e8d54f44955dea578e8bff3b66f2537" title="Jacobi行列式" alt="" coords="352,31,479,57"/>
+<area shape="rect" href="config_8cpp.html#a9035555d0f5aae81503f6dd897171576" title="形函数对eta求导" alt="" coords="541,5,603,32"/>
+<area shape="rect" href="config_8cpp.html#ae6f3d29131d803a8e79ebebd60ef13c8" title="形函数对xi求导" alt="" coords="545,56,599,83"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="nodal__solver_8h_a2410691cddae543d67ca315982966ab1_icgraph.png" border="0" usemap="#anodal__solver_8h_a2410691cddae543d67ca315982966ab1_icgraph" alt=""/></div>
+<map name="anodal__solver_8h_a2410691cddae543d67ca315982966ab1_icgraph" id="anodal__solver_8h_a2410691cddae543d67ca315982966ab1_icgraph">
+<area shape="rect" title="计算节点速度和corner force" alt="" coords="160,5,307,47"/>
+<area shape="rect" href="time__evo_8cpp.html#a8f07d30e8e3870951eb4b21f5f7138e1" title="进行一次时间更新" alt="" coords="5,13,112,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2c22281007ccfde5c86ff8449178d9a9" name="a2c22281007ccfde5c86ff8449178d9a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c22281007ccfde5c86ff8449178d9a9">&#9670;&nbsp;</a></span>u_average()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double * u_average </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>j</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>计算第(i,j)个节点处每个相邻单元在该点的速度重构值的平均 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>节点的行编号 </td></tr>
+    <tr><td class="paramname">j</td><td>节点的列编号 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>double* </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="nodal__solver_8cpp_source.html">nodal_solver.cpp</a> 第 <a class="el" href="nodal__solver_8cpp_source.html#l00019">19</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="nodal__solver_8h_a2c22281007ccfde5c86ff8449178d9a9_cgraph.png" border="0" usemap="#anodal__solver_8h_a2c22281007ccfde5c86ff8449178d9a9_cgraph" alt=""/></div>
+<map name="anodal__solver_8h_a2c22281007ccfde5c86ff8449178d9a9_cgraph" id="anodal__solver_8h_a2c22281007ccfde5c86ff8449178d9a9_cgraph">
+<area shape="rect" title="计算第(i,j)个节点处每个相邻单元在该点的速度重构值的平均" alt="" coords="5,5,85,32"/>
+<area shape="rect" href="struct_omega.html#ae9e4670a6573ed62345914db38030152" title="基函数" alt="" coords="133,5,224,32"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="nodal__solver_8h_a2c22281007ccfde5c86ff8449178d9a9_icgraph.png" border="0" usemap="#anodal__solver_8h_a2c22281007ccfde5c86ff8449178d9a9_icgraph" alt=""/></div>
+<map name="anodal__solver_8h_a2c22281007ccfde5c86ff8449178d9a9_icgraph" id="anodal__solver_8h_a2c22281007ccfde5c86ff8449178d9a9_icgraph">
+<area shape="rect" title="计算第(i,j)个节点处每个相邻单元在该点的速度重构值的平均" alt="" coords="507,13,587,39"/>
+<area shape="rect" href="nodal__solver_8cpp.html#a2410691cddae543d67ca315982966ab1" title="计算节点速度和corner force" alt="" coords="160,5,307,47"/>
+<area shape="rect" href="nodal__solver_8cpp.html#a2478d5a90b7746785cd691cb127b41cb" title="计算大网格中心点的速度和corner force" alt="" coords="355,38,459,65"/>
+<area shape="rect" href="time__evo_8cpp.html#a8f07d30e8e3870951eb4b21f5f7138e1" title="进行一次时间更新" alt="" coords="5,13,112,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2478d5a90b7746785cd691cb127b41cb" name="a2478d5a90b7746785cd691cb127b41cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2478d5a90b7746785cd691cb127b41cb">&#9670;&nbsp;</a></span>ustar_f_center()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ustar_f_center </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>j</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>计算大网格中心点的速度和corner force </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>节点行编号 </td></tr>
+    <tr><td class="paramname">j</td><td>节点列编号 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>double** </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="nodal__solver_8cpp_source.html">nodal_solver.cpp</a> 第 <a class="el" href="nodal__solver_8cpp_source.html#l00168">168</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="nodal__solver_8h_a2478d5a90b7746785cd691cb127b41cb_cgraph.png" border="0" usemap="#anodal__solver_8h_a2478d5a90b7746785cd691cb127b41cb_cgraph" alt=""/></div>
+<map name="anodal__solver_8h_a2478d5a90b7746785cd691cb127b41cb_cgraph" id="anodal__solver_8h_a2478d5a90b7746785cd691cb127b41cb_cgraph">
+<area shape="rect" title="计算大网格中心点的速度和corner force" alt="" coords="5,5,109,32"/>
+<area shape="rect" href="nodal__solver_8cpp.html#a2c22281007ccfde5c86ff8449178d9a9" title="计算第(i,j)个节点处每个相邻单元在该点的速度重构值的平均" alt="" coords="157,5,237,32"/>
+<area shape="rect" href="struct_omega.html#ae9e4670a6573ed62345914db38030152" title="基函数" alt="" coords="285,5,376,32"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="nodal__solver_8h_a2478d5a90b7746785cd691cb127b41cb_icgraph.png" border="0" usemap="#anodal__solver_8h_a2478d5a90b7746785cd691cb127b41cb_icgraph" alt=""/></div>
+<map name="anodal__solver_8h_a2478d5a90b7746785cd691cb127b41cb_icgraph" id="anodal__solver_8h_a2478d5a90b7746785cd691cb127b41cb_icgraph">
+<area shape="rect" title="计算大网格中心点的速度和corner force" alt="" coords="355,13,459,39"/>
+<area shape="rect" href="nodal__solver_8cpp.html#a2410691cddae543d67ca315982966ab1" title="计算节点速度和corner force" alt="" coords="160,5,307,47"/>
+<area shape="rect" href="time__evo_8cpp.html#a8f07d30e8e3870951eb4b21f5f7138e1" title="进行一次时间更新" alt="" coords="5,13,112,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a id="a4f2f5c8f3c2357af962c3887513fdfed" name="a4f2f5c8f3c2357af962c3887513fdfed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f2f5c8f3c2357af962c3887513fdfed">&#9670;&nbsp;</a></span>Pre</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double Pre = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>边界压力 </p>
+
+<p class="definition">在文件 <a class="el" href="nodal__solver_8h_source.html">nodal_solver.h</a> 第 <a class="el" href="nodal__solver_8h_source.html#l00016">16</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4784b5a193511a74d1f552ee9ee805e3" name="a4784b5a193511a74d1f552ee9ee805e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4784b5a193511a74d1f552ee9ee805e3">&#9670;&nbsp;</a></span>vn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double vn = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>外法向速度（假设已知) </p>
+
+<p class="definition">在文件 <a class="el" href="nodal__solver_8h_source.html">nodal_solver.h</a> 第 <a class="el" href="nodal__solver_8h_source.html#l00015">15</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

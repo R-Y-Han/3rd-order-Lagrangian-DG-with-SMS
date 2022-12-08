@@ -22,12 +22,12 @@ using namespace std;
 
 const int pk = 6;   /**< 基函数个数*/
 
-const int n_element = 10;   /**< 横向网格个数*/
-const int m_element = 10;   /**< 纵向网格个数*/
+const int n_element = 5;   /**< 横向网格个数*/
+const int m_element = 5;   /**< 纵向网格个数*/
 const int n_point = 2 * n_element;   /**< 横向节点个数*/
 const int m_point = 2 * m_element;   /**< 纵向节点个数*/
 
-const double T = 0.6;   /**< 终止时间*/
+const double T = 0.2;   /**< 终止时间*/
 
 enum test_cases{
     shockless_Noh = 1,

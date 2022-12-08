@@ -1,0 +1,7 @@
+<map id="node_initialsegment" name="node_initialsegment">
+<area shape="rect" id="node1" title="对第(i,j)个节点初始化每个子网格内每条边上的加权外法向量和corner force" alt="" coords="5,31,143,57"/>
+<area shape="rect" id="node2" href="$struct_omega.html#a36f13c29d5fdeea6dda722fa5772b838" title="边上三点插值的Jacobi行列式" alt="" coords="195,5,349,32"/>
+<area shape="rect" id="node3" href="$struct_omega.html#a47d204206abee5b0ad902fe941320a57" title="Jacobi矩阵" alt="" coords="191,56,353,83"/>
+<area shape="rect" id="node4" href="$config_8cpp.html#a9035555d0f5aae81503f6dd897171576" title="形函数对eta求导" alt="" coords="401,31,463,57"/>
+<area shape="rect" id="node5" href="$config_8cpp.html#ae6f3d29131d803a8e79ebebd60ef13c8" title="形函数对xi求导" alt="" coords="405,81,459,108"/>
+</map>

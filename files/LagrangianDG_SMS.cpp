@@ -31,9 +31,10 @@
 #include "rhs.h"
 #include "time_evo.h"
 #include "plot.h"
+#include <fstream>
 using namespace std;
 
-void norme();
+double norme();
 void normux();
 
 int main()
@@ -55,14 +56,22 @@ int main()
         cout<<t<<endl;
         //break;
     }
-    norme();
+    double norm;
+    norm = norme();
     normux();
     plotmesh();
+
+    ofstream f;
+    const char* fn = "F:\\C++Code\\LagrangianDG_with_SMS\\output\\shockless_Noh\\norm.txt";
+    f.open(fn, ios::app);
+    f<<"n="<<n_element<<"\t"<<"m="<<m_element<<"\t"<<"T="<<T<<"\t"<<"Pk="<<pk<<endl;
+    f<<"norm="<<norm<<endl<<endl;
+    f.close();
 
     system("pause");
 }
 
-void norme()
+double norme()
 {
     double temp;
     int i,j,k;
@@ -99,7 +108,7 @@ void norme()
         }
     }
     cout<<temp<<endl;
-    return ;
+    return temp;
 }
 
 void normux()

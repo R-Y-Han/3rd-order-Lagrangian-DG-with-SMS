@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>A 3rd-order Lagrangian DG hydrodynamic method using SMS: F:/C++Code/LagrangianDG_with_SMS/files/time_evo.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">A 3rd-order Lagrangian DG hydrodynamic method using SMS<span id="projectnumber">&#160;v1.01</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_e924a1110dd74e78da430196ceee4730.html">LagrangianDG_with_SMS</a></li><li class="navelem"><a class="el" href="dir_d5913d2600e8f133715c1037159f6871.html">files</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">time_evo.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="time__evo_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef TIME_EVO_H</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define TIME_EVO_H</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keywordtype">double</span> * <a class="code hl_function" href="time__evo_8h.html#ad5bb568af63d323d7706e732079027ca">RK_step1</a>(<span class="keywordtype">double</span> * <a class="code hl_variable" href="nodal__solver_8h.html#a4784b5a193511a74d1f552ee9ee805e3">vn</a>, <span class="keywordtype">double</span> * Rn,</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                  <span class="keywordtype">double</span> ** Minv, <span class="keywordtype">double</span> delta_t, <span class="keywordtype">int</span> len);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keywordtype">double</span> * <a class="code hl_function" href="time__evo_8h.html#a334072f7ec63ef572dcaca44ed228a6e">RK_step2</a>(<span class="keywordtype">double</span> * <a class="code hl_variable" href="nodal__solver_8h.html#a4784b5a193511a74d1f552ee9ee805e3">vn</a>, <span class="keywordtype">double</span> * vs1, <span class="keywordtype">double</span> * Rs1,</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                  <span class="keywordtype">double</span> ** Minv, <span class="keywordtype">double</span> delta_t, <span class="keywordtype">int</span> len);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keywordtype">double</span> * <a class="code hl_function" href="time__evo_8h.html#ad43db8824e2a094e576eb12422e5b456">RK_step3</a>(<span class="keywordtype">double</span> * <a class="code hl_variable" href="nodal__solver_8h.html#a4784b5a193511a74d1f552ee9ee805e3">vn</a>, <span class="keywordtype">double</span> * vs2, <span class="keywordtype">double</span> * Rs2,</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                  <span class="keywordtype">double</span> ** Minv, <span class="keywordtype">double</span> delta_t, <span class="keywordtype">int</span> len);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keywordtype">void</span> <a class="code hl_function" href="time__evo_8h.html#a8f07d30e8e3870951eb4b21f5f7138e1">one_time_step</a>(<span class="keywordtype">double</span> dt);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="keywordtype">void</span> <a class="code hl_function" href="time__evo_8h.html#a4bfe9f6f9a52c8fa937fc420a1f5b85d">update_geo</a>();</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="keywordtype">double</span> <a class="code hl_function" href="time__evo_8h.html#af78a3558c99adc184a7ae7f462138290">choosedt</a>(<span class="keywordtype">double</span> dtn);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="anodal__solver_8h_html_a4784b5a193511a74d1f552ee9ee805e3"><div class="ttname"><a href="nodal__solver_8h.html#a4784b5a193511a74d1f552ee9ee805e3">vn</a></div><div class="ttdeci">const double vn</div><div class="ttdoc">外法向速度（假设已知)</div><div class="ttdef"><b>Definition:</b> <a href="nodal__solver_8h_source.html#l00015">nodal_solver.h:15</a></div></div>
+<div class="ttc" id="atime__evo_8h_html_a334072f7ec63ef572dcaca44ed228a6e"><div class="ttname"><a href="time__evo_8h.html#a334072f7ec63ef572dcaca44ed228a6e">RK_step2</a></div><div class="ttdeci">double * RK_step2(double *vn, double *vs1, double *Rs1, double **Minv, double delta_t, int len)</div><div class="ttdoc">RK第二步</div><div class="ttdef"><b>Definition:</b> <a href="time__evo_8cpp_source.html#l00049">time_evo.cpp:49</a></div></div>
+<div class="ttc" id="atime__evo_8h_html_a4bfe9f6f9a52c8fa937fc420a1f5b85d"><div class="ttname"><a href="time__evo_8h.html#a4bfe9f6f9a52c8fa937fc420a1f5b85d">update_geo</a></div><div class="ttdeci">void update_geo()</div><div class="ttdoc">更新几何量</div><div class="ttdef"><b>Definition:</b> <a href="time__evo_8cpp_source.html#l00566">time_evo.cpp:566</a></div></div>
+<div class="ttc" id="atime__evo_8h_html_a8f07d30e8e3870951eb4b21f5f7138e1"><div class="ttname"><a href="time__evo_8h.html#a8f07d30e8e3870951eb4b21f5f7138e1">one_time_step</a></div><div class="ttdeci">void one_time_step(double dt)</div><div class="ttdoc">进行一次时间更新</div><div class="ttdef"><b>Definition:</b> <a href="time__evo_8cpp_source.html#l00109">time_evo.cpp:109</a></div></div>
+<div class="ttc" id="atime__evo_8h_html_ad43db8824e2a094e576eb12422e5b456"><div class="ttname"><a href="time__evo_8h.html#ad43db8824e2a094e576eb12422e5b456">RK_step3</a></div><div class="ttdeci">double * RK_step3(double *vn, double *vs2, double *Rs2, double **Minv, double delta_t, int len)</div><div class="ttdoc">RK第三步</div><div class="ttdef"><b>Definition:</b> <a href="time__evo_8cpp_source.html#l00079">time_evo.cpp:79</a></div></div>
+<div class="ttc" id="atime__evo_8h_html_ad5bb568af63d323d7706e732079027ca"><div class="ttname"><a href="time__evo_8h.html#ad5bb568af63d323d7706e732079027ca">RK_step1</a></div><div class="ttdeci">double * RK_step1(double *vn, double *Rn, double **Minv, double delta_t, int len)</div><div class="ttdoc">RK第一步</div><div class="ttdef"><b>Definition:</b> <a href="time__evo_8cpp_source.html#l00020">time_evo.cpp:20</a></div></div>
+<div class="ttc" id="atime__evo_8h_html_af78a3558c99adc184a7ae7f462138290"><div class="ttname"><a href="time__evo_8h.html#af78a3558c99adc184a7ae7f462138290">choosedt</a></div><div class="ttdeci">double choosedt(double dtn)</div><div class="ttdoc">选择时间步长</div><div class="ttdef"><b>Definition:</b> <a href="time__evo_8cpp_source.html#l00752">time_evo.cpp:752</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

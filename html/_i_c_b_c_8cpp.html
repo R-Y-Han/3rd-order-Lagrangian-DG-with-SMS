@@ -1,0 +1,988 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>A 3rd-order Lagrangian DG hydrodynamic method using SMS: F:/C++Code/LagrangianDG_with_SMS/files/ICBC.cpp 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">A 3rd-order Lagrangian DG hydrodynamic method using SMS<span id="projectnumber">&#160;v1.01</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_e924a1110dd74e78da430196ceee4730.html">LagrangianDG_with_SMS</a></li><li class="navelem"><a class="el" href="dir_d5913d2600e8f133715c1037159f6871.html">files</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">ICBC.cpp 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>initial condition  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;cmath&gt;</code><br />
+<code>#include &quot;<a class="el" href="_i_c_b_c_8h_source.html">ICBC.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+ICBC.cpp 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="_i_c_b_c_8cpp__incl.png" border="0" usemap="#a_f_1_2_c_09_09_code_2_lagrangian_d_g__with___s_m_s_2files_2_i_c_b_c_8cpp" alt=""/></div>
+<map name="a_f_1_2_c_09_09_code_2_lagrangian_d_g__with___s_m_s_2files_2_i_c_b_c_8cpp" id="a_f_1_2_c_09_09_code_2_lagrangian_d_g__with___s_m_s_2files_2_i_c_b_c_8cpp">
+<area shape="rect" title="initial condition" alt="" coords="5,5,184,47"/>
+<area shape="rect" title=" " alt="" coords="23,95,81,121"/>
+<area shape="rect" href="_i_c_b_c_8h.html" title="initial condition" alt="" coords="106,95,169,121"/>
+<area shape="rect" href="config_8h.html" title="Configuration for some definitions." alt="" coords="104,169,171,196"/>
+<area shape="rect" title=" " alt="" coords="109,244,165,271"/>
+</map>
+</div>
+</div>
+<p><a href="_i_c_b_c_8cpp_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a4786347b8a686d3a2db1c11aab594b31"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i_c_b_c_8cpp.html#a4786347b8a686d3a2db1c11aab594b31">ini_rho</a> (double x, double y)</td></tr>
+<tr class="memdesc:a4786347b8a686d3a2db1c11aab594b31"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始密度场  <a href="_i_c_b_c_8cpp.html#a4786347b8a686d3a2db1c11aab594b31">更多...</a><br /></td></tr>
+<tr class="separator:a4786347b8a686d3a2db1c11aab594b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a475b347b6b77d5c28e5ed077ec1f481f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i_c_b_c_8cpp.html#a475b347b6b77d5c28e5ed077ec1f481f">ini_rho_x</a> (double x, double y)</td></tr>
+<tr class="separator:a475b347b6b77d5c28e5ed077ec1f481f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaceb9a1a7105da65a53f071c72a52e8c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i_c_b_c_8cpp.html#aaceb9a1a7105da65a53f071c72a52e8c">ini_rho_y</a> (double x, double y)</td></tr>
+<tr class="separator:aaceb9a1a7105da65a53f071c72a52e8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab413f2c784b6035b07b498491a80a71d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i_c_b_c_8cpp.html#ab413f2c784b6035b07b498491a80a71d">ini_rho_xx</a> (double x, double y)</td></tr>
+<tr class="separator:ab413f2c784b6035b07b498491a80a71d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff463196c9a18ba907bcd16328eeb831"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i_c_b_c_8cpp.html#aff463196c9a18ba907bcd16328eeb831">ini_rho_xy</a> (double x, double y)</td></tr>
+<tr class="separator:aff463196c9a18ba907bcd16328eeb831"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5229b078225f6b624de861cc08ad948"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i_c_b_c_8cpp.html#aa5229b078225f6b624de861cc08ad948">ini_rho_yy</a> (double x, double y)</td></tr>
+<tr class="separator:aa5229b078225f6b624de861cc08ad948"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ec4c58d521a9670e06629a5e1e57724"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i_c_b_c_8cpp.html#a9ec4c58d521a9670e06629a5e1e57724">ini_ux</a> (double x, double y)</td></tr>
+<tr class="memdesc:a9ec4c58d521a9670e06629a5e1e57724"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始速度场的x方向分量  <a href="_i_c_b_c_8cpp.html#a9ec4c58d521a9670e06629a5e1e57724">更多...</a><br /></td></tr>
+<tr class="separator:a9ec4c58d521a9670e06629a5e1e57724"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addfcc66f22683130d92e73c339eae3df"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i_c_b_c_8cpp.html#addfcc66f22683130d92e73c339eae3df">ini_ux_x</a> (double x, double y)</td></tr>
+<tr class="memdesc:addfcc66f22683130d92e73c339eae3df"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始速度场对x求导的x分量，后面几个都是求偏导  <a href="_i_c_b_c_8cpp.html#addfcc66f22683130d92e73c339eae3df">更多...</a><br /></td></tr>
+<tr class="separator:addfcc66f22683130d92e73c339eae3df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2cb552c67ea84ac9e20c719bdd99db6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i_c_b_c_8cpp.html#ae2cb552c67ea84ac9e20c719bdd99db6">ini_ux_y</a> (double x, double y)</td></tr>
+<tr class="separator:ae2cb552c67ea84ac9e20c719bdd99db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dec905c08b8e3800131b1331e82eded"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i_c_b_c_8cpp.html#a0dec905c08b8e3800131b1331e82eded">ini_ux_xx</a> (double x, double y)</td></tr>
+<tr class="separator:a0dec905c08b8e3800131b1331e82eded"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a362bd350764cca6edbd783c1fb781205"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i_c_b_c_8cpp.html#a362bd350764cca6edbd783c1fb781205">ini_ux_xy</a> (double x, double y)</td></tr>
+<tr class="separator:a362bd350764cca6edbd783c1fb781205"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17387825689453addcd94a5994012166"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i_c_b_c_8cpp.html#a17387825689453addcd94a5994012166">ini_ux_yy</a> (double x, double y)</td></tr>
+<tr class="separator:a17387825689453addcd94a5994012166"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9040bee0d870c5c102e7118094046c77"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i_c_b_c_8cpp.html#a9040bee0d870c5c102e7118094046c77">ini_uy</a> (double x, double y)</td></tr>
+<tr class="memdesc:a9040bee0d870c5c102e7118094046c77"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始速度场y方向分量  <a href="_i_c_b_c_8cpp.html#a9040bee0d870c5c102e7118094046c77">更多...</a><br /></td></tr>
+<tr class="separator:a9040bee0d870c5c102e7118094046c77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dcc1ba893101d4b1dad24f5d81bfb94"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i_c_b_c_8cpp.html#a3dcc1ba893101d4b1dad24f5d81bfb94">ini_uy_x</a> (double x, double y)</td></tr>
+<tr class="memdesc:a3dcc1ba893101d4b1dad24f5d81bfb94"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始速度场对y求导的x分量  <a href="_i_c_b_c_8cpp.html#a3dcc1ba893101d4b1dad24f5d81bfb94">更多...</a><br /></td></tr>
+<tr class="separator:a3dcc1ba893101d4b1dad24f5d81bfb94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefceb416f945345aa8d7a9c303272007"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i_c_b_c_8cpp.html#aefceb416f945345aa8d7a9c303272007">ini_uy_y</a> (double x, double y)</td></tr>
+<tr class="separator:aefceb416f945345aa8d7a9c303272007"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a433d2a7d78d4fce5b78ac2c9e6e71220"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i_c_b_c_8cpp.html#a433d2a7d78d4fce5b78ac2c9e6e71220">ini_uy_xx</a> (double x, double y)</td></tr>
+<tr class="separator:a433d2a7d78d4fce5b78ac2c9e6e71220"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad334ccc1d7d5e05ef774b2eda9fc2319"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i_c_b_c_8cpp.html#ad334ccc1d7d5e05ef774b2eda9fc2319">ini_uy_xy</a> (double x, double y)</td></tr>
+<tr class="separator:ad334ccc1d7d5e05ef774b2eda9fc2319"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c2ea0f9964811bf9660d0bf074220bd"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i_c_b_c_8cpp.html#a4c2ea0f9964811bf9660d0bf074220bd">ini_uy_yy</a> (double x, double y)</td></tr>
+<tr class="separator:a4c2ea0f9964811bf9660d0bf074220bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad71858c17718666a8a0407a4d2578a06"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i_c_b_c_8cpp.html#ad71858c17718666a8a0407a4d2578a06">ini_p</a> (double x, double y)</td></tr>
+<tr class="memdesc:ad71858c17718666a8a0407a4d2578a06"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始压力场  <a href="_i_c_b_c_8cpp.html#ad71858c17718666a8a0407a4d2578a06">更多...</a><br /></td></tr>
+<tr class="separator:ad71858c17718666a8a0407a4d2578a06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a7d5449d8fecf8a0a0c3c5da2a7a089"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i_c_b_c_8cpp.html#a0a7d5449d8fecf8a0a0c3c5da2a7a089">ini_p_x</a> (double x, double y)</td></tr>
+<tr class="separator:a0a7d5449d8fecf8a0a0c3c5da2a7a089"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8c8c1a8e3c9c0d80411e2b8aeeb2fbb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i_c_b_c_8cpp.html#ab8c8c1a8e3c9c0d80411e2b8aeeb2fbb">ini_p_y</a> (double x, double y)</td></tr>
+<tr class="separator:ab8c8c1a8e3c9c0d80411e2b8aeeb2fbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6989997fa7894649b2e6bba607db20a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i_c_b_c_8cpp.html#ab6989997fa7894649b2e6bba607db20a">ini_p_xx</a> (double x, double y)</td></tr>
+<tr class="separator:ab6989997fa7894649b2e6bba607db20a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad10e4eb18bc6898521d720403307914e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i_c_b_c_8cpp.html#ad10e4eb18bc6898521d720403307914e">ini_p_xy</a> (double x, double y)</td></tr>
+<tr class="separator:ad10e4eb18bc6898521d720403307914e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad7b6f69f008326fb6b550b000ca9ff1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i_c_b_c_8cpp.html#aad7b6f69f008326fb6b550b000ca9ff1">ini_p_yy</a> (double x, double y)</td></tr>
+<tr class="separator:aad7b6f69f008326fb6b550b000ca9ff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e6e8abd029f3fee01a3bafeea373efe"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i_c_b_c_8cpp.html#a5e6e8abd029f3fee01a3bafeea373efe">ana_e</a> (double x, double y, double t)</td></tr>
+<tr class="memdesc:a5e6e8abd029f3fee01a3bafeea373efe"><td class="mdescLeft">&#160;</td><td class="mdescRight">内能解析解  <a href="_i_c_b_c_8cpp.html#a5e6e8abd029f3fee01a3bafeea373efe">更多...</a><br /></td></tr>
+<tr class="separator:a5e6e8abd029f3fee01a3bafeea373efe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >initial condition </p>
+<dl class="section author"><dt>作者</dt><dd>R.Y. Han (<a href="#" onclick="location.href='mai'+'lto:'+'han'+'ru'+'oyu'+'21'+'@gs'+'ca'+'ep.'+'ac'+'.cn'; return false;">hanru<span class="obfuscator">.nosp@m.</span>oyu2<span class="obfuscator">.nosp@m.</span>1@gsc<span class="obfuscator">.nosp@m.</span>aep.<span class="obfuscator">.nosp@m.</span>ac.cn</a>) </dd></dl>
+<dl class="section version"><dt>版本</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2022-11-29</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright (c) 2022 R.Y. Han. All Rights Reserved. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_i_c_b_c_8cpp_source.html">ICBC.cpp</a> 中定义.</p>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a5e6e8abd029f3fee01a3bafeea373efe" name="a5e6e8abd029f3fee01a3bafeea373efe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e6e8abd029f3fee01a3bafeea373efe">&#9670;&nbsp;</a></span>ana_e()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ana_e </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>内能解析解 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>物理横坐标 </td></tr>
+    <tr><td class="paramname">y</td><td>物理纵坐标 </td></tr>
+    <tr><td class="paramname">t</td><td>时间 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>double </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_i_c_b_c_8cpp_source.html">ICBC.cpp</a> 第 <a class="el" href="_i_c_b_c_8cpp_source.html#l00419">419</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad71858c17718666a8a0407a4d2578a06" name="ad71858c17718666a8a0407a4d2578a06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad71858c17718666a8a0407a4d2578a06">&#9670;&nbsp;</a></span>ini_p()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ini_p </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初始压力场 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>物理横坐标 </td></tr>
+    <tr><td class="paramname">y</td><td>物理纵坐标 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>double </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_i_c_b_c_8cpp_source.html">ICBC.cpp</a> 第 <a class="el" href="_i_c_b_c_8cpp_source.html#l00321">321</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0a7d5449d8fecf8a0a0c3c5da2a7a089" name="a0a7d5449d8fecf8a0a0c3c5da2a7a089"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a7d5449d8fecf8a0a0c3c5da2a7a089">&#9670;&nbsp;</a></span>ini_p_x()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ini_p_x </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_c_b_c_8cpp_source.html">ICBC.cpp</a> 第 <a class="el" href="_i_c_b_c_8cpp_source.html#l00339">339</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab6989997fa7894649b2e6bba607db20a" name="ab6989997fa7894649b2e6bba607db20a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6989997fa7894649b2e6bba607db20a">&#9670;&nbsp;</a></span>ini_p_xx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ini_p_xx </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_c_b_c_8cpp_source.html">ICBC.cpp</a> 第 <a class="el" href="_i_c_b_c_8cpp_source.html#l00371">371</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad10e4eb18bc6898521d720403307914e" name="ad10e4eb18bc6898521d720403307914e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad10e4eb18bc6898521d720403307914e">&#9670;&nbsp;</a></span>ini_p_xy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ini_p_xy </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_c_b_c_8cpp_source.html">ICBC.cpp</a> 第 <a class="el" href="_i_c_b_c_8cpp_source.html#l00387">387</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab8c8c1a8e3c9c0d80411e2b8aeeb2fbb" name="ab8c8c1a8e3c9c0d80411e2b8aeeb2fbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8c8c1a8e3c9c0d80411e2b8aeeb2fbb">&#9670;&nbsp;</a></span>ini_p_y()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ini_p_y </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_c_b_c_8cpp_source.html">ICBC.cpp</a> 第 <a class="el" href="_i_c_b_c_8cpp_source.html#l00355">355</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aad7b6f69f008326fb6b550b000ca9ff1" name="aad7b6f69f008326fb6b550b000ca9ff1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad7b6f69f008326fb6b550b000ca9ff1">&#9670;&nbsp;</a></span>ini_p_yy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ini_p_yy </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_c_b_c_8cpp_source.html">ICBC.cpp</a> 第 <a class="el" href="_i_c_b_c_8cpp_source.html#l00403">403</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4786347b8a686d3a2db1c11aab594b31" name="a4786347b8a686d3a2db1c11aab594b31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4786347b8a686d3a2db1c11aab594b31">&#9670;&nbsp;</a></span>ini_rho()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ini_rho </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初始密度场 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>物理横坐标 </td></tr>
+    <tr><td class="paramname">y</td><td>物理纵坐标 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>double </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_i_c_b_c_8cpp_source.html">ICBC.cpp</a> 第 <a class="el" href="_i_c_b_c_8cpp_source.html#l00015">15</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="_i_c_b_c_8cpp_a4786347b8a686d3a2db1c11aab594b31_icgraph.png" border="0" usemap="#a_i_c_b_c_8cpp_a4786347b8a686d3a2db1c11aab594b31_icgraph" alt=""/></div>
+<map name="a_i_c_b_c_8cpp_a4786347b8a686d3a2db1c11aab594b31_icgraph" id="a_i_c_b_c_8cpp_a4786347b8a686d3a2db1c11aab594b31_icgraph">
+<area shape="rect" title="初始密度场" alt="" coords="285,56,345,83"/>
+<area shape="rect" href="initial_8cpp.html#a2286aa850479a600ff6f6d551d9fb71d" title="计算第(i,j)个网格的质心和质量" alt="" coords="123,5,220,32"/>
+<area shape="rect" href="initial_8cpp.html#a37e14b548616bbb2a71d336d72306af7" title="计算第(i,j)个网格的质量矩阵" alt="" coords="123,56,220,83"/>
+<area shape="rect" href="initial_8cpp.html#a6441ed6c770bbb22d8708e5e78544ca3" title="计算第(i,j)个大网格内子网格的质量和初始面积" alt="" coords="105,107,237,133"/>
+<area shape="rect" href="initial_8cpp.html#ab6260e57d76c13a47b10081e2a9f68dc" title="初始化各个变量，生成网格并记录初始信息" alt="" coords="5,56,57,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a475b347b6b77d5c28e5ed077ec1f481f" name="a475b347b6b77d5c28e5ed077ec1f481f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a475b347b6b77d5c28e5ed077ec1f481f">&#9670;&nbsp;</a></span>ini_rho_x()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ini_rho_x </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_c_b_c_8cpp_source.html">ICBC.cpp</a> 第 <a class="el" href="_i_c_b_c_8cpp_source.html#l00034">34</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab413f2c784b6035b07b498491a80a71d" name="ab413f2c784b6035b07b498491a80a71d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab413f2c784b6035b07b498491a80a71d">&#9670;&nbsp;</a></span>ini_rho_xx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ini_rho_xx </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_c_b_c_8cpp_source.html">ICBC.cpp</a> 第 <a class="el" href="_i_c_b_c_8cpp_source.html#l00072">72</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aff463196c9a18ba907bcd16328eeb831" name="aff463196c9a18ba907bcd16328eeb831"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff463196c9a18ba907bcd16328eeb831">&#9670;&nbsp;</a></span>ini_rho_xy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ini_rho_xy </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_c_b_c_8cpp_source.html">ICBC.cpp</a> 第 <a class="el" href="_i_c_b_c_8cpp_source.html#l00091">91</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aaceb9a1a7105da65a53f071c72a52e8c" name="aaceb9a1a7105da65a53f071c72a52e8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaceb9a1a7105da65a53f071c72a52e8c">&#9670;&nbsp;</a></span>ini_rho_y()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ini_rho_y </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_c_b_c_8cpp_source.html">ICBC.cpp</a> 第 <a class="el" href="_i_c_b_c_8cpp_source.html#l00053">53</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa5229b078225f6b624de861cc08ad948" name="aa5229b078225f6b624de861cc08ad948"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5229b078225f6b624de861cc08ad948">&#9670;&nbsp;</a></span>ini_rho_yy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ini_rho_yy </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_c_b_c_8cpp_source.html">ICBC.cpp</a> 第 <a class="el" href="_i_c_b_c_8cpp_source.html#l00110">110</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9ec4c58d521a9670e06629a5e1e57724" name="a9ec4c58d521a9670e06629a5e1e57724"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ec4c58d521a9670e06629a5e1e57724">&#9670;&nbsp;</a></span>ini_ux()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ini_ux </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初始速度场的x方向分量 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>物理横坐标 </td></tr>
+    <tr><td class="paramname">y</td><td>物理纵坐标 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>double </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_i_c_b_c_8cpp_source.html">ICBC.cpp</a> 第 <a class="el" href="_i_c_b_c_8cpp_source.html#l00129">129</a> 行定义.</p>
+
+</div>
+</div>
+<a id="addfcc66f22683130d92e73c339eae3df" name="addfcc66f22683130d92e73c339eae3df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addfcc66f22683130d92e73c339eae3df">&#9670;&nbsp;</a></span>ini_ux_x()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ini_ux_x </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初始速度场对x求导的x分量，后面几个都是求偏导 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>物理横坐标 </td></tr>
+    <tr><td class="paramname">y</td><td>物理纵坐标 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>double </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_i_c_b_c_8cpp_source.html">ICBC.cpp</a> 第 <a class="el" href="_i_c_b_c_8cpp_source.html#l00145">145</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0dec905c08b8e3800131b1331e82eded" name="a0dec905c08b8e3800131b1331e82eded"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dec905c08b8e3800131b1331e82eded">&#9670;&nbsp;</a></span>ini_ux_xx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ini_ux_xx </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_c_b_c_8cpp_source.html">ICBC.cpp</a> 第 <a class="el" href="_i_c_b_c_8cpp_source.html#l00177">177</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a362bd350764cca6edbd783c1fb781205" name="a362bd350764cca6edbd783c1fb781205"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a362bd350764cca6edbd783c1fb781205">&#9670;&nbsp;</a></span>ini_ux_xy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ini_ux_xy </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_c_b_c_8cpp_source.html">ICBC.cpp</a> 第 <a class="el" href="_i_c_b_c_8cpp_source.html#l00193">193</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae2cb552c67ea84ac9e20c719bdd99db6" name="ae2cb552c67ea84ac9e20c719bdd99db6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2cb552c67ea84ac9e20c719bdd99db6">&#9670;&nbsp;</a></span>ini_ux_y()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ini_ux_y </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_c_b_c_8cpp_source.html">ICBC.cpp</a> 第 <a class="el" href="_i_c_b_c_8cpp_source.html#l00161">161</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a17387825689453addcd94a5994012166" name="a17387825689453addcd94a5994012166"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17387825689453addcd94a5994012166">&#9670;&nbsp;</a></span>ini_ux_yy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ini_ux_yy </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_c_b_c_8cpp_source.html">ICBC.cpp</a> 第 <a class="el" href="_i_c_b_c_8cpp_source.html#l00209">209</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9040bee0d870c5c102e7118094046c77" name="a9040bee0d870c5c102e7118094046c77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9040bee0d870c5c102e7118094046c77">&#9670;&nbsp;</a></span>ini_uy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ini_uy </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初始速度场y方向分量 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>物理横坐标 </td></tr>
+    <tr><td class="paramname">y</td><td>物理纵坐标 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>double </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_i_c_b_c_8cpp_source.html">ICBC.cpp</a> 第 <a class="el" href="_i_c_b_c_8cpp_source.html#l00225">225</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3dcc1ba893101d4b1dad24f5d81bfb94" name="a3dcc1ba893101d4b1dad24f5d81bfb94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3dcc1ba893101d4b1dad24f5d81bfb94">&#9670;&nbsp;</a></span>ini_uy_x()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ini_uy_x </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初始速度场对y求导的x分量 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>物理横坐标 </td></tr>
+    <tr><td class="paramname">y</td><td>物理纵坐标 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>double </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_i_c_b_c_8cpp_source.html">ICBC.cpp</a> 第 <a class="el" href="_i_c_b_c_8cpp_source.html#l00241">241</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a433d2a7d78d4fce5b78ac2c9e6e71220" name="a433d2a7d78d4fce5b78ac2c9e6e71220"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a433d2a7d78d4fce5b78ac2c9e6e71220">&#9670;&nbsp;</a></span>ini_uy_xx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ini_uy_xx </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_c_b_c_8cpp_source.html">ICBC.cpp</a> 第 <a class="el" href="_i_c_b_c_8cpp_source.html#l00273">273</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad334ccc1d7d5e05ef774b2eda9fc2319" name="ad334ccc1d7d5e05ef774b2eda9fc2319"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad334ccc1d7d5e05ef774b2eda9fc2319">&#9670;&nbsp;</a></span>ini_uy_xy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ini_uy_xy </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_c_b_c_8cpp_source.html">ICBC.cpp</a> 第 <a class="el" href="_i_c_b_c_8cpp_source.html#l00289">289</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aefceb416f945345aa8d7a9c303272007" name="aefceb416f945345aa8d7a9c303272007"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefceb416f945345aa8d7a9c303272007">&#9670;&nbsp;</a></span>ini_uy_y()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ini_uy_y </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_c_b_c_8cpp_source.html">ICBC.cpp</a> 第 <a class="el" href="_i_c_b_c_8cpp_source.html#l00257">257</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4c2ea0f9964811bf9660d0bf074220bd" name="a4c2ea0f9964811bf9660d0bf074220bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c2ea0f9964811bf9660d0bf074220bd">&#9670;&nbsp;</a></span>ini_uy_yy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ini_uy_yy </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_c_b_c_8cpp_source.html">ICBC.cpp</a> 第 <a class="el" href="_i_c_b_c_8cpp_source.html#l00305">305</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

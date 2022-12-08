@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>A 3rd-order Lagrangian DG hydrodynamic method using SMS: F:/C++Code/LagrangianDG_with_SMS/files/rhs.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">A 3rd-order Lagrangian DG hydrodynamic method using SMS<span id="projectnumber">&#160;v1.01</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_e924a1110dd74e78da430196ceee4730.html">LagrangianDG_with_SMS</a></li><li class="navelem"><a class="el" href="dir_d5913d2600e8f133715c1037159f6871.html">files</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">rhs.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="rhs_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef RHS_H</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define RHS_H</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keywordtype">double</span> * <a class="code hl_function" href="rhs_8h.html#ae0c43a2c43f7ca72cbd8ad449ebeea51">get_xieta</a>(<span class="keywordtype">int</span> pq, <span class="keywordtype">int</span> oq);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keywordtype">int</span> <a class="code hl_function" href="rhs_8h.html#a2cd0a52835a9250633884d19f55b4471">get_subcell_in_vertexneighbor</a>(<span class="keywordtype">int</span> sq, <span class="keywordtype">int</span> pq);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keywordtype">double</span> * <a class="code hl_function" href="rhs_8h.html#ab2a08119cd1d0c08346c95e8eac6a9bb">specific_volume_matrix</a>(<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keywordtype">double</span> ** <a class="code hl_function" href="rhs_8h.html#a96ce734a6e4ba04983284fc61345bd1f">velocity_matrix</a>(<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="keywordtype">double</span> * <a class="code hl_function" href="rhs_8h.html#a2e5e76e2a0351a0d12004b608bc070f8">energy_matrix</a>(<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="arhs_8h_html_a2cd0a52835a9250633884d19f55b4471"><div class="ttname"><a href="rhs_8h.html#a2cd0a52835a9250633884d19f55b4471">get_subcell_in_vertexneighbor</a></div><div class="ttdeci">int get_subcell_in_vertexneighbor(int sq, int pq)</div><div class="ttdoc">Get the subcell in vertexneighbor</div><div class="ttdef"><b>Definition:</b> <a href="rhs_8cpp_source.html#l00043">rhs.cpp:43</a></div></div>
+<div class="ttc" id="arhs_8h_html_a2e5e76e2a0351a0d12004b608bc070f8"><div class="ttname"><a href="rhs_8h.html#a2e5e76e2a0351a0d12004b608bc070f8">energy_matrix</a></div><div class="ttdeci">double * energy_matrix(int i, int j)</div><div class="ttdoc">得到单元的总能右端向量</div><div class="ttdef"><b>Definition:</b> <a href="rhs_8cpp_source.html#l00277">rhs.cpp:277</a></div></div>
+<div class="ttc" id="arhs_8h_html_a96ce734a6e4ba04983284fc61345bd1f"><div class="ttname"><a href="rhs_8h.html#a96ce734a6e4ba04983284fc61345bd1f">velocity_matrix</a></div><div class="ttdeci">double ** velocity_matrix(int i, int j)</div><div class="ttdoc">得到单元速度的右端矩阵</div><div class="ttdef"><b>Definition:</b> <a href="rhs_8cpp_source.html#l00157">rhs.cpp:157</a></div></div>
+<div class="ttc" id="arhs_8h_html_ab2a08119cd1d0c08346c95e8eac6a9bb"><div class="ttname"><a href="rhs_8h.html#ab2a08119cd1d0c08346c95e8eac6a9bb">specific_volume_matrix</a></div><div class="ttdeci">double * specific_volume_matrix(int i, int j)</div><div class="ttdoc">得到单元比容的右端向量</div><div class="ttdef"><b>Definition:</b> <a href="rhs_8cpp_source.html#l00063">rhs.cpp:63</a></div></div>
+<div class="ttc" id="arhs_8h_html_ae0c43a2c43f7ca72cbd8ad449ebeea51"><div class="ttname"><a href="rhs_8h.html#ae0c43a2c43f7ca72cbd8ad449ebeea51">get_xieta</a></div><div class="ttdeci">double * get_xieta(int pq, int oq)</div><div class="ttdoc">得到点在大网格中的局部坐标</div><div class="ttdef"><b>Definition:</b> <a href="rhs_8cpp_source.html#l00019">rhs.cpp:19</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

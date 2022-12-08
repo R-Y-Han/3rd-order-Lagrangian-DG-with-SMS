@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>A 3rd-order Lagrangian DG hydrodynamic method using SMS: F:/C++Code/LagrangianDG_with_SMS/files/LagrangianDG_SMS.cpp 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">A 3rd-order Lagrangian DG hydrodynamic method using SMS<span id="projectnumber">&#160;v1.01</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_e924a1110dd74e78da430196ceee4730.html">LagrangianDG_with_SMS</a></li><li class="navelem"><a class="el" href="dir_d5913d2600e8f133715c1037159f6871.html">files</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">LagrangianDG_SMS.cpp 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>二维三阶Lagrangian DG格式  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
+<code>#include &quot;<a class="el" href="config_8h_source.html">config.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_i_c_b_c_8h_source.html">ICBC.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="initial_8h_source.html">initial.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="nodal__solver_8h_source.html">nodal_solver.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="rhs_8h_source.html">rhs.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="time__evo_8h_source.html">time_evo.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="plot_8h_source.html">plot.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+LagrangianDG_SMS.cpp 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="_lagrangian_d_g___s_m_s_8cpp__incl.png" border="0" usemap="#a_f_1_2_c_09_09_code_2_lagrangian_d_g__with___s_m_s_2files_2_lagrangian_d_g___s_m_s_8cpp" alt=""/></div>
+<map name="a_f_1_2_c_09_09_code_2_lagrangian_d_g__with___s_m_s_2files_2_lagrangian_d_g___s_m_s_8cpp" id="a_f_1_2_c_09_09_code_2_lagrangian_d_g__with___s_m_s_2files_2_lagrangian_d_g___s_m_s_8cpp">
+<area shape="rect" title="二维三阶Lagrangian DG格式" alt="" coords="253,5,454,61"/>
+<area shape="rect" title=" " alt="" coords="5,109,77,136"/>
+<area shape="rect" title=" " alt="" coords="101,109,160,136"/>
+<area shape="rect" href="config_8h.html" title="Configuration for some definitions." alt="" coords="199,184,265,211"/>
+<area shape="rect" href="_i_c_b_c_8h.html" title="initial condition" alt="" coords="235,109,298,136"/>
+<area shape="rect" href="initial_8h.html" title="生成网格并记录所有信息" alt="" coords="322,109,385,136"/>
+<area shape="rect" href="nodal__solver_8h.html" title="定义节点解法器" alt="" coords="409,109,513,136"/>
+<area shape="rect" href="rhs_8h.html" title="计算右端矩阵" alt="" coords="537,109,588,136"/>
+<area shape="rect" href="time__evo_8h.html" title="时间更新相关函数" alt="" coords="613,109,697,136"/>
+<area shape="rect" href="plot_8h.html" title="绘制plt文件" alt="" coords="721,109,775,136"/>
+<area shape="rect" title=" " alt="" coords="204,259,260,285"/>
+</map>
+</div>
+</div>
+<p><a href="_lagrangian_d_g___s_m_s_8cpp_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a2dfe9cbd2b91a8e8681295b02ed8cada"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lagrangian_d_g___s_m_s_8cpp.html#a2dfe9cbd2b91a8e8681295b02ed8cada">norme</a> ()</td></tr>
+<tr class="separator:a2dfe9cbd2b91a8e8681295b02ed8cada"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a838e7b205f6d3ec1108cf60ac873443d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lagrangian_d_g___s_m_s_8cpp.html#a838e7b205f6d3ec1108cf60ac873443d">normux</a> ()</td></tr>
+<tr class="separator:a838e7b205f6d3ec1108cf60ac873443d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lagrangian_d_g___s_m_s_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >二维三阶Lagrangian DG格式 </p>
+<dl class="section author"><dt>作者</dt><dd>R.Y. Han (<a href="#" onclick="location.href='mai'+'lto:'+'han'+'ru'+'oyu'+'21'+'@gs'+'ca'+'ep.'+'ac'+'.cn'; return false;">hanru<span class="obfuscator">.nosp@m.</span>oyu2<span class="obfuscator">.nosp@m.</span>1@gsc<span class="obfuscator">.nosp@m.</span>aep.<span class="obfuscator">.nosp@m.</span>ac.cn</a>) </dd></dl>
+<dl class="section version"><dt>版本</dt><dd>1.01 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2022-11-28</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright (c) 2022 R.Y. Han All Rights Reserved. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_lagrangian_d_g___s_m_s_8cpp_source.html">LagrangianDG_SMS.cpp</a> 中定义.</p>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&nbsp;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lagrangian_d_g___s_m_s_8cpp_source.html">LagrangianDG_SMS.cpp</a> 第 <a class="el" href="_lagrangian_d_g___s_m_s_8cpp_source.html#l00039">39</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2dfe9cbd2b91a8e8681295b02ed8cada" name="a2dfe9cbd2b91a8e8681295b02ed8cada"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dfe9cbd2b91a8e8681295b02ed8cada">&#9670;&nbsp;</a></span>norme()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void norme </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lagrangian_d_g___s_m_s_8cpp_source.html">LagrangianDG_SMS.cpp</a> 第 <a class="el" href="_lagrangian_d_g___s_m_s_8cpp_source.html#l00065">65</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a838e7b205f6d3ec1108cf60ac873443d" name="a838e7b205f6d3ec1108cf60ac873443d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a838e7b205f6d3ec1108cf60ac873443d">&#9670;&nbsp;</a></span>normux()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void normux </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lagrangian_d_g___s_m_s_8cpp_source.html">LagrangianDG_SMS.cpp</a> 第 <a class="el" href="_lagrangian_d_g___s_m_s_8cpp_source.html#l00105">105</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

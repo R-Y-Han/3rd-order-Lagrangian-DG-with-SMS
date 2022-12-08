@@ -1,0 +1,20 @@
+<map id="initial" name="initial">
+<area shape="rect" id="node1" title="初始化各个变量，生成网格并记录初始信息" alt="" coords="5,183,57,209"/>
+<area shape="rect" id="node2" href="$initial_8cpp.html#a678188ee7d163e6aca74038010c67491" title="对第(i,j)个单元寻找相邻单元， 从(i,j&#45;1)开始逆时针数第一个存在的单元作为第一个项。 存储一维序号。" alt="" coords="105,5,249,32"/>
+<area shape="rect" id="node3" href="$initial_8cpp.html#ae92a01f80d15618fb1e3e3492039a363" title="生成初始网格划分：" alt="" coords="125,56,229,83"/>
+<area shape="rect" id="node4" href="$config_8cpp.html#ad853fdcbc7a04c065bc7b94b6b3ae674" title="求解M的逆矩阵" alt="" coords="137,107,217,133"/>
+<area shape="rect" id="node5" href="$initial_8cpp.html#a2286aa850479a600ff6f6d551d9fb71d" title="计算第(i,j)个网格的质心和质量" alt="" coords="129,208,226,235"/>
+<area shape="rect" id="node12" href="$initial_8cpp.html#a37e14b548616bbb2a71d336d72306af7" title="计算第(i,j)个网格的质量矩阵" alt="" coords="129,309,226,336"/>
+<area shape="rect" id="node14" href="$initial_8cpp.html#a275740c71861bd79bf92744ee8bb78e5" title=" " alt="" coords="114,360,241,387"/>
+<area shape="rect" id="node15" href="$initial_8cpp.html#a5204ffcf052a51d13b212846c5dabd48" title="对第(i,j)个节点初始化每个子网格内每条边上的加权外法向量和corner force" alt="" coords="109,157,246,184"/>
+<area shape="rect" id="node18" href="$initial_8cpp.html#a6441ed6c770bbb22d8708e5e78544ca3" title="计算第(i,j)个大网格内子网格的质量和初始面积" alt="" coords="111,259,243,285"/>
+<area shape="rect" id="node6" href="$struct_omega.html#af1168f2a07e51bdb509d9474a7d89374" title="Jacobi初始行列式" alt="" coords="308,208,449,235"/>
+<area shape="rect" id="node9" href="$_i_c_b_c_8cpp.html#a4786347b8a686d3a2db1c11aab594b31" title="初始密度场" alt="" coords="349,259,409,285"/>
+<area shape="rect" id="node10" href="$struct_omega.html#a4af6b05c2485d51b2062f7479fb9489c" title="参考空间到初始物理空间的映射" alt="" coords="323,309,434,336"/>
+<area shape="rect" id="node7" href="$config_8cpp.html#a9035555d0f5aae81503f6dd897171576" title="形函数对eta求导" alt="" coords="508,183,569,209"/>
+<area shape="rect" id="node8" href="$config_8cpp.html#ae6f3d29131d803a8e79ebebd60ef13c8" title="形函数对xi求导" alt="" coords="512,120,565,147"/>
+<area shape="rect" id="node11" href="$config_8cpp.html#a9ec66e6f9842d15614ea62f75bd47b24" title="形函数" alt="" coords="519,309,558,336"/>
+<area shape="rect" id="node13" href="$struct_omega.html#ae9e4670a6573ed62345914db38030152" title="基函数" alt="" coords="333,360,424,387"/>
+<area shape="rect" id="node16" href="$struct_omega.html#a36f13c29d5fdeea6dda722fa5772b838" title="边上三点插值的Jacobi行列式" alt="" coords="301,157,456,184"/>
+<area shape="rect" id="node17" href="$struct_omega.html#a47d204206abee5b0ad902fe941320a57" title="Jacobi矩阵" alt="" coords="297,107,460,133"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="bp" name="bp">
+<area shape="rect" id="node1" title="形函数" alt="" coords="444,31,483,57"/>
+<area shape="rect" id="node2" href="$struct_omega.html#aed154e23027c249d71e1d5609629a4b6" title="参考空间到物理空间的映射" alt="" coords="289,5,392,32"/>
+<area shape="rect" id="node3" href="$struct_omega.html#a4af6b05c2485d51b2062f7479fb9489c" title="参考空间到初始物理空间的映射" alt="" coords="285,56,396,83"/>
+<area shape="rect" id="node4" href="$initial_8cpp.html#a2286aa850479a600ff6f6d551d9fb71d" title="计算第(i,j)个网格的质心和质量" alt="" coords="123,5,220,32"/>
+<area shape="rect" id="node6" href="$initial_8cpp.html#a37e14b548616bbb2a71d336d72306af7" title="计算第(i,j)个网格的质量矩阵" alt="" coords="123,56,220,83"/>
+<area shape="rect" id="node7" href="$initial_8cpp.html#a6441ed6c770bbb22d8708e5e78544ca3" title="计算第(i,j)个大网格内子网格的质量和初始面积" alt="" coords="105,107,237,133"/>
+<area shape="rect" id="node5" href="$initial_8cpp.html#ab6260e57d76c13a47b10081e2a9f68dc" title="初始化各个变量，生成网格并记录初始信息" alt="" coords="5,56,57,83"/>
+</map>

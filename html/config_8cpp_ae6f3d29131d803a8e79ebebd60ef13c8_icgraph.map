@@ -1,0 +1,19 @@
+<map id="bp_xi" name="bp_xi">
+<area shape="rect" id="node1" title="形函数对xi求导" alt="" coords="800,335,853,361"/>
+<area shape="rect" id="node2" href="$struct_omega.html#a3e8d54f44955dea578e8bff3b66f2537" title="Jacobi行列式" alt="" coords="600,360,727,387"/>
+<area shape="rect" id="node7" href="$struct_omega.html#af1168f2a07e51bdb509d9474a7d89374" title="Jacobi初始行列式" alt="" coords="375,81,516,108"/>
+<area shape="rect" id="node12" href="$struct_omega.html#a47d204206abee5b0ad902fe941320a57" title="Jacobi矩阵" alt="" coords="364,284,527,311"/>
+<area shape="rect" id="node17" href="$struct_omega.html#af7131d753c1d329d0027b08163e27846" title="初始Jacobi矩阵" alt="" coords="575,411,752,437"/>
+<area shape="rect" id="node3" href="$nodal__solver_8cpp.html#aa4b97eb78addbf951b5724d7576f8632" title="计算第(i,j)个子网格中SMS密度的修正量rho_s &#45; rho_nus" alt="" coords="395,415,495,441"/>
+<area shape="rect" id="node6" href="$time__evo_8cpp.html#a4bfe9f6f9a52c8fa937fc420a1f5b85d" title="更新几何量" alt="" coords="193,360,283,387"/>
+<area shape="rect" id="node4" href="$nodal__solver_8cpp.html#a2410691cddae543d67ca315982966ab1" title="计算节点速度和corner force" alt="" coords="165,411,311,453"/>
+<area shape="rect" id="node5" href="$time__evo_8cpp.html#a8f07d30e8e3870951eb4b21f5f7138e1" title="进行一次时间更新" alt="" coords="5,309,112,336"/>
+<area shape="rect" id="node8" href="$initial_8cpp.html#a2286aa850479a600ff6f6d551d9fb71d" title="计算第(i,j)个网格的质心和质量" alt="" coords="189,56,287,83"/>
+<area shape="rect" id="node10" href="$initial_8cpp.html#a37e14b548616bbb2a71d336d72306af7" title="计算第(i,j)个网格的质量矩阵" alt="" coords="189,107,287,133"/>
+<area shape="rect" id="node11" href="$initial_8cpp.html#a6441ed6c770bbb22d8708e5e78544ca3" title="计算第(i,j)个大网格内子网格的质量和初始面积" alt="" coords="172,5,304,32"/>
+<area shape="rect" id="node9" href="$initial_8cpp.html#ab6260e57d76c13a47b10081e2a9f68dc" title="初始化各个变量，生成网格并记录初始信息" alt="" coords="33,81,85,108"/>
+<area shape="rect" id="node13" href="$rhs_8cpp.html#a2e5e76e2a0351a0d12004b608bc070f8" title="得到单元的总能右端向量" alt="" coords="186,259,290,285"/>
+<area shape="rect" id="node14" href="$initial_8cpp.html#a5204ffcf052a51d13b212846c5dabd48" title="对第(i,j)个节点初始化每个子网格内每条边上的加权外法向量和corner force" alt="" coords="169,157,307,184"/>
+<area shape="rect" id="node15" href="$rhs_8cpp.html#ab2a08119cd1d0c08346c95e8eac6a9bb" title="得到单元比容的右端向量" alt="" coords="160,309,316,336"/>
+<area shape="rect" id="node16" href="$rhs_8cpp.html#a96ce734a6e4ba04983284fc61345bd1f" title="得到单元速度的右端矩阵" alt="" coords="184,208,292,235"/>
+</map>

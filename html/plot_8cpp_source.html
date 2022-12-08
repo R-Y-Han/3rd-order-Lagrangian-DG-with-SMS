@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>A 3rd-order Lagrangian DG hydrodynamic method using SMS: F:/C++Code/LagrangianDG_with_SMS/files/plot.cpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">A 3rd-order Lagrangian DG hydrodynamic method using SMS<span id="projectnumber">&#160;v1.01</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_e924a1110dd74e78da430196ceee4730.html">LagrangianDG_with_SMS</a></li><li class="navelem"><a class="el" href="dir_d5913d2600e8f133715c1037159f6871.html">files</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">plot.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="plot_8cpp.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="plot_8h.html">plot.h</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="config_8h.html">config.h</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;fstream&gt;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">const</span> <span class="keywordtype">char</span>* fn_mesh = <span class="stringliteral">&quot;F:\\C++Code\\LagrangianDG_with_SMS\\output\\mesh.plt&quot;</span>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="plot_8cpp.html#aea94477b668a9a9715f2d9211f55ffa3">   20</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="plot_8cpp.html#aea94477b668a9a9715f2d9211f55ffa3">plotmesh</a>()</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>{</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="comment">//先用tecplot画网格</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordtype">int</span> i, j, r;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    remove(fn_mesh);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    ofstream f(fn_mesh);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    f&lt;&lt;<span class="stringliteral">&quot;VARIABLES = X, Y&quot;</span>&lt;&lt;endl;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    f&lt;&lt;<span class="stringliteral">&quot;ZONE N = &quot;</span>&lt;&lt;(<a class="code hl_variable" href="config_8h.html#ae5dba15655dbe27eb37016ddb2f39d02">n_point</a> + 1) * (<a class="code hl_variable" href="config_8h.html#a680114303f0243b53cfda9148074d3ff">m_point</a> + 1)&lt;&lt;<span class="stringliteral">&quot;, E = &quot;</span>&lt;&lt;<a class="code hl_variable" href="config_8h.html#ae5dba15655dbe27eb37016ddb2f39d02">n_point</a>*<a class="code hl_variable" href="config_8h.html#a680114303f0243b53cfda9148074d3ff">m_point</a>&lt;&lt;<span class="stringliteral">&quot;, F = FEPOINT, ET = QUADRILATERAL&quot;</span>&lt;&lt;endl;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordflow">for</span> (i=0; i&lt;=<a class="code hl_variable" href="config_8h.html#ae5dba15655dbe27eb37016ddb2f39d02">n_point</a>; i++)</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <span class="keywordflow">for</span> (j=0; j&lt;=<a class="code hl_variable" href="config_8h.html#a680114303f0243b53cfda9148074d3ff">m_point</a>; j++)</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            f&lt;&lt;<span class="stringliteral">&quot;\t&quot;</span>&lt;&lt;<a class="code hl_variable" href="config_8cpp.html#a2b1f00a574f56ee256473405243db605">point</a>[i][j].x&lt;&lt;<span class="stringliteral">&quot;\t&quot;</span>&lt;&lt;<a class="code hl_variable" href="config_8cpp.html#a2b1f00a574f56ee256473405243db605">point</a>[i][j].<a class="code hl_variable" href="structnode.html#ad6b92a3350329877401b880c80ba7d54">y</a>&lt;&lt;endl;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        }</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    }</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordflow">for</span> (i=0; i&lt;<a class="code hl_variable" href="config_8h.html#ae5dba15655dbe27eb37016ddb2f39d02">n_point</a>; i++)</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keywordflow">for</span> (j=0; j&lt;<a class="code hl_variable" href="config_8h.html#a680114303f0243b53cfda9148074d3ff">m_point</a>; j++)</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <span class="keywordflow">for</span> (r=0; r&lt;4; r++)</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                f&lt;&lt;<span class="stringliteral">&quot;\t&quot;</span>&lt;&lt;<a class="code hl_variable" href="config_8cpp.html#a19c5cc28ab6334927aedb2c7793d6214">subcell</a>[i][j].<a class="code hl_variable" href="struct_sub_element.html#ad44f6ff190fdaf94a4b6f8ac57e97252">vertex</a>[r]+1;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            f&lt;&lt;endl;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    f.close();</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    return ;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>}</div>
+<div class="ttc" id="aconfig_8cpp_html_a19c5cc28ab6334927aedb2c7793d6214"><div class="ttname"><a href="config_8cpp.html#a19c5cc28ab6334927aedb2c7793d6214">subcell</a></div><div class="ttdeci">SubElement subcell[n_point][m_point]</div><div class="ttdoc">生成n_point*m_point个子网格</div><div class="ttdef"><b>Definition:</b> <a href="config_8cpp_source.html#l00426">config.cpp:426</a></div></div>
+<div class="ttc" id="aconfig_8cpp_html_a2b1f00a574f56ee256473405243db605"><div class="ttname"><a href="config_8cpp.html#a2b1f00a574f56ee256473405243db605">point</a></div><div class="ttdeci">node point[n_point+1][m_point+1]</div><div class="ttdoc">生成节点</div><div class="ttdef"><b>Definition:</b> <a href="config_8cpp_source.html#l00428">config.cpp:428</a></div></div>
+<div class="ttc" id="aconfig_8h_html"><div class="ttname"><a href="config_8h.html">config.h</a></div><div class="ttdoc">Configuration for some definitions.</div></div>
+<div class="ttc" id="aconfig_8h_html_a680114303f0243b53cfda9148074d3ff"><div class="ttname"><a href="config_8h.html#a680114303f0243b53cfda9148074d3ff">m_point</a></div><div class="ttdeci">const int m_point</div><div class="ttdoc">纵向节点个数</div><div class="ttdef"><b>Definition:</b> <a href="config_8h_source.html#l00028">config.h:28</a></div></div>
+<div class="ttc" id="aconfig_8h_html_ae5dba15655dbe27eb37016ddb2f39d02"><div class="ttname"><a href="config_8h.html#ae5dba15655dbe27eb37016ddb2f39d02">n_point</a></div><div class="ttdeci">const int n_point</div><div class="ttdoc">横向节点个数</div><div class="ttdef"><b>Definition:</b> <a href="config_8h_source.html#l00027">config.h:27</a></div></div>
+<div class="ttc" id="aplot_8cpp_html_aea94477b668a9a9715f2d9211f55ffa3"><div class="ttname"><a href="plot_8cpp.html#aea94477b668a9a9715f2d9211f55ffa3">plotmesh</a></div><div class="ttdeci">void plotmesh()</div><div class="ttdoc">绘制网格图像</div><div class="ttdef"><b>Definition:</b> <a href="plot_8cpp_source.html#l00020">plot.cpp:20</a></div></div>
+<div class="ttc" id="aplot_8h_html"><div class="ttname"><a href="plot_8h.html">plot.h</a></div><div class="ttdoc">绘制plt文件</div></div>
+<div class="ttc" id="astruct_sub_element_html_ad44f6ff190fdaf94a4b6f8ac57e97252"><div class="ttname"><a href="struct_sub_element.html#ad44f6ff190fdaf94a4b6f8ac57e97252">SubElement::vertex</a></div><div class="ttdeci">int vertex[4]</div><div class="ttdoc">顶点编号</div><div class="ttdef"><b>Definition:</b> <a href="config_8h_source.html#l00090">config.h:90</a></div></div>
+<div class="ttc" id="astructnode_html_ad6b92a3350329877401b880c80ba7d54"><div class="ttname"><a href="structnode.html#ad6b92a3350329877401b880c80ba7d54">node::y</a></div><div class="ttdeci">double y</div><div class="ttdoc">节点物理坐标</div><div class="ttdef"><b>Definition:</b> <a href="config_8h_source.html#l00161">config.h:161</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

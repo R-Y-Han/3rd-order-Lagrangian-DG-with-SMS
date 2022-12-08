@@ -1,0 +1,586 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>A 3rd-order Lagrangian DG hydrodynamic method using SMS: node结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">A 3rd-order Lagrangian DG hydrodynamic method using SMS<span id="projectnumber">&#160;v1.01</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="structnode-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">node结构体 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>网格节点定义  
+ <a href="structnode.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="config_8h_source.html">config.h</a>&gt;</code></p>
+<div class="dynheader">
+node 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="structnode__coll__graph.png" border="0" usemap="#anode_coll__map" alt="Collaboration graph"/></div>
+<map name="anode_coll__map" id="anode_coll__map">
+<area shape="rect" title="网格节点定义" alt="" coords="5,5,124,229"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:af32c25f57bdd0a4cfcbdb9d701cde2f1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnode.html#af32c25f57bdd0a4cfcbdb9d701cde2f1">q</a></td></tr>
+<tr class="memdesc:af32c25f57bdd0a4cfcbdb9d701cde2f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">编号，q = (m_point + 1)*i + j  <a href="structnode.html#af32c25f57bdd0a4cfcbdb9d701cde2f1">更多...</a><br /></td></tr>
+<tr class="separator:af32c25f57bdd0a4cfcbdb9d701cde2f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3151a7524b57d0738a9c8fd4ef13db22"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnode.html#a3151a7524b57d0738a9c8fd4ef13db22">boundary</a></td></tr>
+<tr class="memdesc:a3151a7524b57d0738a9c8fd4ef13db22"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否为边界节点  <a href="structnode.html#a3151a7524b57d0738a9c8fd4ef13db22">更多...</a><br /></td></tr>
+<tr class="separator:a3151a7524b57d0738a9c8fd4ef13db22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2278460dc142a93dffffcc2216ef2ed"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnode.html#aa2278460dc142a93dffffcc2216ef2ed">ifcenter</a></td></tr>
+<tr class="memdesc:aa2278460dc142a93dffffcc2216ef2ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否为大网格的中点  <a href="structnode.html#aa2278460dc142a93dffffcc2216ef2ed">更多...</a><br /></td></tr>
+<tr class="separator:aa2278460dc142a93dffffcc2216ef2ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6ee75b574cf6492f0bd981c78ff27e8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnode.html#ae6ee75b574cf6492f0bd981c78ff27e8">ifedge</a></td></tr>
+<tr class="memdesc:ae6ee75b574cf6492f0bd981c78ff27e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否为边上的点  <a href="structnode.html#ae6ee75b574cf6492f0bd981c78ff27e8">更多...</a><br /></td></tr>
+<tr class="separator:ae6ee75b574cf6492f0bd981c78ff27e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabf3ca384568672adc30f70f01c9df10"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnode.html#aabf3ca384568672adc30f70f01c9df10">x</a></td></tr>
+<tr class="separator:aabf3ca384568672adc30f70f01c9df10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6b92a3350329877401b880c80ba7d54"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnode.html#ad6b92a3350329877401b880c80ba7d54">y</a></td></tr>
+<tr class="memdesc:ad6b92a3350329877401b880c80ba7d54"><td class="mdescLeft">&#160;</td><td class="mdescRight">节点物理坐标  <a href="structnode.html#ad6b92a3350329877401b880c80ba7d54">更多...</a><br /></td></tr>
+<tr class="separator:ad6b92a3350329877401b880c80ba7d54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae26431ed55307715301fdcbe58b3ecf6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnode.html#ae26431ed55307715301fdcbe58b3ecf6">x0</a></td></tr>
+<tr class="separator:ae26431ed55307715301fdcbe58b3ecf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48c29196991d57cec0dfe3fc6be5a20a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnode.html#a48c29196991d57cec0dfe3fc6be5a20a">y0</a></td></tr>
+<tr class="memdesc:a48c29196991d57cec0dfe3fc6be5a20a"><td class="mdescLeft">&#160;</td><td class="mdescRight">节点初始物理坐标  <a href="structnode.html#a48c29196991d57cec0dfe3fc6be5a20a">更多...</a><br /></td></tr>
+<tr class="separator:a48c29196991d57cec0dfe3fc6be5a20a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcae41a2bb37f4a6eabf83085878c6be"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnode.html#adcae41a2bb37f4a6eabf83085878c6be">upstarx</a></td></tr>
+<tr class="separator:adcae41a2bb37f4a6eabf83085878c6be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad936ccc162f66d808807f4d5345a3f91"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnode.html#ad936ccc162f66d808807f4d5345a3f91">upstary</a></td></tr>
+<tr class="memdesc:ad936ccc162f66d808807f4d5345a3f91"><td class="mdescLeft">&#160;</td><td class="mdescRight">节点速度  <a href="structnode.html#ad936ccc162f66d808807f4d5345a3f91">更多...</a><br /></td></tr>
+<tr class="separator:ad936ccc162f66d808807f4d5345a3f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af08eef8c6235351fc178637cdb83884b"><td class="memItemLeft" align="right" valign="top">vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnode.html#af08eef8c6235351fc178637cdb83884b">neighbor_subcell</a></td></tr>
+<tr class="memdesc:af08eef8c6235351fc178637cdb83884b"><td class="mdescLeft">&#160;</td><td class="mdescRight">相邻子网格编号  <a href="structnode.html#af08eef8c6235351fc178637cdb83884b">更多...</a><br /></td></tr>
+<tr class="separator:af08eef8c6235351fc178637cdb83884b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac89f5397acdf5d5a34c06aa58117b7de"><td class="memItemLeft" align="right" valign="top">vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnode.html#ac89f5397acdf5d5a34c06aa58117b7de">neighbor_node</a></td></tr>
+<tr class="memdesc:ac89f5397acdf5d5a34c06aa58117b7de"><td class="mdescLeft">&#160;</td><td class="mdescRight">相邻节点  <a href="structnode.html#ac89f5397acdf5d5a34c06aa58117b7de">更多...</a><br /></td></tr>
+<tr class="separator:ac89f5397acdf5d5a34c06aa58117b7de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ad6e31466ff41951c98be78b48405c8"><td class="memItemLeft" align="right" valign="top">vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnode.html#a1ad6e31466ff41951c98be78b48405c8">weightnext</a></td></tr>
+<tr class="memdesc:a1ad6e31466ff41951c98be78b48405c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">第k个子网格内到下一点的积分权重  <a href="structnode.html#a1ad6e31466ff41951c98be78b48405c8">更多...</a><br /></td></tr>
+<tr class="separator:a1ad6e31466ff41951c98be78b48405c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab11c27f44a9811020bb7231a40104fdd"><td class="memItemLeft" align="right" valign="top">vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnode.html#ab11c27f44a9811020bb7231a40104fdd">weightlast</a></td></tr>
+<tr class="memdesc:ab11c27f44a9811020bb7231a40104fdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">第k个子网格内到上一点的积分权重  <a href="structnode.html#ab11c27f44a9811020bb7231a40104fdd">更多...</a><br /></td></tr>
+<tr class="separator:ab11c27f44a9811020bb7231a40104fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72d5a59a4da80dd81b204e6ed0da2a4c"><td class="memItemLeft" align="right" valign="top">vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnode.html#a72d5a59a4da80dd81b204e6ed0da2a4c">segmentnext</a></td></tr>
+<tr class="memdesc:a72d5a59a4da80dd81b204e6ed0da2a4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">第k个相邻子网格内下一个顶点  <a href="structnode.html#a72d5a59a4da80dd81b204e6ed0da2a4c">更多...</a><br /></td></tr>
+<tr class="separator:a72d5a59a4da80dd81b204e6ed0da2a4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb2aff95acc3d493362f3f019177950f"><td class="memItemLeft" align="right" valign="top">vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnode.html#acb2aff95acc3d493362f3f019177950f">segmentlast</a></td></tr>
+<tr class="memdesc:acb2aff95acc3d493362f3f019177950f"><td class="mdescLeft">&#160;</td><td class="mdescRight">第k个子网格内上一个顶点  <a href="structnode.html#acb2aff95acc3d493362f3f019177950f">更多...</a><br /></td></tr>
+<tr class="separator:acb2aff95acc3d493362f3f019177950f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5c1fa21d3acb805a2810811818beaeb"><td class="memItemLeft" align="right" valign="top">vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnode.html#ac5c1fa21d3acb805a2810811818beaeb">anext</a></td></tr>
+<tr class="memdesc:ac5c1fa21d3acb805a2810811818beaeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">第k个相邻子网格内到下一个顶点的加权外法向量  <a href="structnode.html#ac5c1fa21d3acb805a2810811818beaeb">更多...</a><br /></td></tr>
+<tr class="separator:ac5c1fa21d3acb805a2810811818beaeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6f78ad1d9bf915d7409374d7a4d2559"><td class="memItemLeft" align="right" valign="top">vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnode.html#ae6f78ad1d9bf915d7409374d7a4d2559">alast</a></td></tr>
+<tr class="memdesc:ae6f78ad1d9bf915d7409374d7a4d2559"><td class="mdescLeft">&#160;</td><td class="mdescRight">第k个相邻子网格内到上一个顶点的加权外法向量  <a href="structnode.html#ae6f78ad1d9bf915d7409374d7a4d2559">更多...</a><br /></td></tr>
+<tr class="separator:ae6f78ad1d9bf915d7409374d7a4d2559"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b7a75b52e9ec03c5c81fef97fceb01f"><td class="memItemLeft" align="right" valign="top">vector&lt; double * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnode.html#a0b7a75b52e9ec03c5c81fef97fceb01f">Nnext</a></td></tr>
+<tr class="memdesc:a0b7a75b52e9ec03c5c81fef97fceb01f"><td class="mdescLeft">&#160;</td><td class="mdescRight">参考单元上第k个相邻子网格内到下一个节点的单位外法向量  <a href="structnode.html#a0b7a75b52e9ec03c5c81fef97fceb01f">更多...</a><br /></td></tr>
+<tr class="separator:a0b7a75b52e9ec03c5c81fef97fceb01f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e9daa925434108a58d49847dade8bfe"><td class="memItemLeft" align="right" valign="top">vector&lt; double * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnode.html#a1e9daa925434108a58d49847dade8bfe">Nlast</a></td></tr>
+<tr class="memdesc:a1e9daa925434108a58d49847dade8bfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">参考单元上第k个相邻子网格内到上一个节点的单位外法向量  <a href="structnode.html#a1e9daa925434108a58d49847dade8bfe">更多...</a><br /></td></tr>
+<tr class="separator:a1e9daa925434108a58d49847dade8bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30375deeac7eee1374ead52cbe034546"><td class="memItemLeft" align="right" valign="top">vector&lt; double * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnode.html#a30375deeac7eee1374ead52cbe034546">nnext</a></td></tr>
+<tr class="memdesc:a30375deeac7eee1374ead52cbe034546"><td class="mdescLeft">&#160;</td><td class="mdescRight">物理空间...的单位外法向量  <a href="structnode.html#a30375deeac7eee1374ead52cbe034546">更多...</a><br /></td></tr>
+<tr class="separator:a30375deeac7eee1374ead52cbe034546"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f4bc269cb7c937bc27c53042bfdfab5"><td class="memItemLeft" align="right" valign="top">vector&lt; double * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnode.html#a5f4bc269cb7c937bc27c53042bfdfab5">nlast</a></td></tr>
+<tr class="memdesc:a5f4bc269cb7c937bc27c53042bfdfab5"><td class="mdescLeft">&#160;</td><td class="mdescRight">物理空间...的单位外法向量  <a href="structnode.html#a5f4bc269cb7c937bc27c53042bfdfab5">更多...</a><br /></td></tr>
+<tr class="separator:a5f4bc269cb7c937bc27c53042bfdfab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8425786ed273ec994a195dbb4e6c063"><td class="memItemLeft" align="right" valign="top">vector&lt; double * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnode.html#ac8425786ed273ec994a195dbb4e6c063">flast</a></td></tr>
+<tr class="memdesc:ac8425786ed273ec994a195dbb4e6c063"><td class="mdescLeft">&#160;</td><td class="mdescRight">第k个相邻子网格内到下一个节点的corner force  <a href="structnode.html#ac8425786ed273ec994a195dbb4e6c063">更多...</a><br /></td></tr>
+<tr class="separator:ac8425786ed273ec994a195dbb4e6c063"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8f79d26dfd136d84e380d4c4a30495d"><td class="memItemLeft" align="right" valign="top">vector&lt; double * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnode.html#aa8f79d26dfd136d84e380d4c4a30495d">fnext</a></td></tr>
+<tr class="memdesc:aa8f79d26dfd136d84e380d4c4a30495d"><td class="mdescLeft">&#160;</td><td class="mdescRight">第k个相邻子网格内到上一个节点的corner force  <a href="structnode.html#aa8f79d26dfd136d84e380d4c4a30495d">更多...</a><br /></td></tr>
+<tr class="separator:aa8f79d26dfd136d84e380d4c4a30495d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >网格节点定义 </p>
+<pre class="fragment">                 ·   last
+                 |
+      anlast  &lt;==|   (subcell k)
+                 |
+     point (i,j) · —— —— —— · next
+                       ||
+                       \/
+                     annext
+</pre> 
+<p class="definition">在文件 <a class="el" href="config_8h_source.html">config.h</a> 第 <a class="el" href="config_8h_source.html#l00156">156</a> 行定义.</p>
+</div><h2 class="groupheader">类成员变量说明</h2>
+<a id="ae6f78ad1d9bf915d7409374d7a4d2559" name="ae6f78ad1d9bf915d7409374d7a4d2559"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6f78ad1d9bf915d7409374d7a4d2559">&#9670;&nbsp;</a></span>alast</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;double &gt; node::alast</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>第k个相邻子网格内到上一个顶点的加权外法向量 </p>
+
+<p class="definition">在文件 <a class="el" href="config_8h_source.html">config.h</a> 第 <a class="el" href="config_8h_source.html#l00171">171</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac5c1fa21d3acb805a2810811818beaeb" name="ac5c1fa21d3acb805a2810811818beaeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5c1fa21d3acb805a2810811818beaeb">&#9670;&nbsp;</a></span>anext</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;double &gt; node::anext</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>第k个相邻子网格内到下一个顶点的加权外法向量 </p>
+
+<p class="definition">在文件 <a class="el" href="config_8h_source.html">config.h</a> 第 <a class="el" href="config_8h_source.html#l00170">170</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3151a7524b57d0738a9c8fd4ef13db22" name="a3151a7524b57d0738a9c8fd4ef13db22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3151a7524b57d0738a9c8fd4ef13db22">&#9670;&nbsp;</a></span>boundary</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int node::boundary</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>是否为边界节点 </p>
+
+<p class="definition">在文件 <a class="el" href="config_8h_source.html">config.h</a> 第 <a class="el" href="config_8h_source.html#l00158">158</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac8425786ed273ec994a195dbb4e6c063" name="ac8425786ed273ec994a195dbb4e6c063"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8425786ed273ec994a195dbb4e6c063">&#9670;&nbsp;</a></span>flast</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;double* &gt; node::flast</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>第k个相邻子网格内到下一个节点的corner force </p>
+
+<p class="definition">在文件 <a class="el" href="config_8h_source.html">config.h</a> 第 <a class="el" href="config_8h_source.html#l00176">176</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa8f79d26dfd136d84e380d4c4a30495d" name="aa8f79d26dfd136d84e380d4c4a30495d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8f79d26dfd136d84e380d4c4a30495d">&#9670;&nbsp;</a></span>fnext</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;double* &gt; node::fnext</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>第k个相邻子网格内到上一个节点的corner force </p>
+
+<p class="definition">在文件 <a class="el" href="config_8h_source.html">config.h</a> 第 <a class="el" href="config_8h_source.html#l00177">177</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa2278460dc142a93dffffcc2216ef2ed" name="aa2278460dc142a93dffffcc2216ef2ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2278460dc142a93dffffcc2216ef2ed">&#9670;&nbsp;</a></span>ifcenter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int node::ifcenter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>是否为大网格的中点 </p>
+
+<p class="definition">在文件 <a class="el" href="config_8h_source.html">config.h</a> 第 <a class="el" href="config_8h_source.html#l00159">159</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae6ee75b574cf6492f0bd981c78ff27e8" name="ae6ee75b574cf6492f0bd981c78ff27e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6ee75b574cf6492f0bd981c78ff27e8">&#9670;&nbsp;</a></span>ifedge</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int node::ifedge</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>是否为边上的点 </p>
+
+<p class="definition">在文件 <a class="el" href="config_8h_source.html">config.h</a> 第 <a class="el" href="config_8h_source.html#l00160">160</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac89f5397acdf5d5a34c06aa58117b7de" name="ac89f5397acdf5d5a34c06aa58117b7de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac89f5397acdf5d5a34c06aa58117b7de">&#9670;&nbsp;</a></span>neighbor_node</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;int &gt; node::neighbor_node</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>相邻节点 </p>
+
+<p class="definition">在文件 <a class="el" href="config_8h_source.html">config.h</a> 第 <a class="el" href="config_8h_source.html#l00165">165</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af08eef8c6235351fc178637cdb83884b" name="af08eef8c6235351fc178637cdb83884b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af08eef8c6235351fc178637cdb83884b">&#9670;&nbsp;</a></span>neighbor_subcell</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;int &gt; node::neighbor_subcell</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>相邻子网格编号 </p>
+
+<p class="definition">在文件 <a class="el" href="config_8h_source.html">config.h</a> 第 <a class="el" href="config_8h_source.html#l00164">164</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1e9daa925434108a58d49847dade8bfe" name="a1e9daa925434108a58d49847dade8bfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e9daa925434108a58d49847dade8bfe">&#9670;&nbsp;</a></span>Nlast</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;double* &gt; node::Nlast</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>参考单元上第k个相邻子网格内到上一个节点的单位外法向量 </p>
+
+<p class="definition">在文件 <a class="el" href="config_8h_source.html">config.h</a> 第 <a class="el" href="config_8h_source.html#l00173">173</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5f4bc269cb7c937bc27c53042bfdfab5" name="a5f4bc269cb7c937bc27c53042bfdfab5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f4bc269cb7c937bc27c53042bfdfab5">&#9670;&nbsp;</a></span>nlast</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;double* &gt; node::nlast</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>物理空间...的单位外法向量 </p>
+
+<p class="definition">在文件 <a class="el" href="config_8h_source.html">config.h</a> 第 <a class="el" href="config_8h_source.html#l00175">175</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0b7a75b52e9ec03c5c81fef97fceb01f" name="a0b7a75b52e9ec03c5c81fef97fceb01f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b7a75b52e9ec03c5c81fef97fceb01f">&#9670;&nbsp;</a></span>Nnext</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;double* &gt; node::Nnext</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>参考单元上第k个相邻子网格内到下一个节点的单位外法向量 </p>
+
+<p class="definition">在文件 <a class="el" href="config_8h_source.html">config.h</a> 第 <a class="el" href="config_8h_source.html#l00172">172</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a30375deeac7eee1374ead52cbe034546" name="a30375deeac7eee1374ead52cbe034546"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30375deeac7eee1374ead52cbe034546">&#9670;&nbsp;</a></span>nnext</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;double* &gt; node::nnext</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>物理空间...的单位外法向量 </p>
+
+<p class="definition">在文件 <a class="el" href="config_8h_source.html">config.h</a> 第 <a class="el" href="config_8h_source.html#l00174">174</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af32c25f57bdd0a4cfcbdb9d701cde2f1" name="af32c25f57bdd0a4cfcbdb9d701cde2f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af32c25f57bdd0a4cfcbdb9d701cde2f1">&#9670;&nbsp;</a></span>q</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int node::q</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>编号，q = (m_point + 1)*i + j </p>
+
+<p class="definition">在文件 <a class="el" href="config_8h_source.html">config.h</a> 第 <a class="el" href="config_8h_source.html#l00157">157</a> 行定义.</p>
+
+</div>
+</div>
+<a id="acb2aff95acc3d493362f3f019177950f" name="acb2aff95acc3d493362f3f019177950f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb2aff95acc3d493362f3f019177950f">&#9670;&nbsp;</a></span>segmentlast</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;int &gt; node::segmentlast</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>第k个子网格内上一个顶点 </p>
+
+<p class="definition">在文件 <a class="el" href="config_8h_source.html">config.h</a> 第 <a class="el" href="config_8h_source.html#l00169">169</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a72d5a59a4da80dd81b204e6ed0da2a4c" name="a72d5a59a4da80dd81b204e6ed0da2a4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72d5a59a4da80dd81b204e6ed0da2a4c">&#9670;&nbsp;</a></span>segmentnext</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;int &gt; node::segmentnext</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>第k个相邻子网格内下一个顶点 </p>
+
+<p class="definition">在文件 <a class="el" href="config_8h_source.html">config.h</a> 第 <a class="el" href="config_8h_source.html#l00168">168</a> 行定义.</p>
+
+</div>
+</div>
+<a id="adcae41a2bb37f4a6eabf83085878c6be" name="adcae41a2bb37f4a6eabf83085878c6be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcae41a2bb37f4a6eabf83085878c6be">&#9670;&nbsp;</a></span>upstarx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double node::upstarx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="config_8h_source.html">config.h</a> 第 <a class="el" href="config_8h_source.html#l00163">163</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad936ccc162f66d808807f4d5345a3f91" name="ad936ccc162f66d808807f4d5345a3f91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad936ccc162f66d808807f4d5345a3f91">&#9670;&nbsp;</a></span>upstary</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double node::upstary</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>节点速度 </p>
+
+<p class="definition">在文件 <a class="el" href="config_8h_source.html">config.h</a> 第 <a class="el" href="config_8h_source.html#l00163">163</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab11c27f44a9811020bb7231a40104fdd" name="ab11c27f44a9811020bb7231a40104fdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab11c27f44a9811020bb7231a40104fdd">&#9670;&nbsp;</a></span>weightlast</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;double &gt; node::weightlast</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>第k个子网格内到上一点的积分权重 </p>
+
+<p class="definition">在文件 <a class="el" href="config_8h_source.html">config.h</a> 第 <a class="el" href="config_8h_source.html#l00167">167</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1ad6e31466ff41951c98be78b48405c8" name="a1ad6e31466ff41951c98be78b48405c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ad6e31466ff41951c98be78b48405c8">&#9670;&nbsp;</a></span>weightnext</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;double &gt; node::weightnext</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>第k个子网格内到下一点的积分权重 </p>
+
+<p class="definition">在文件 <a class="el" href="config_8h_source.html">config.h</a> 第 <a class="el" href="config_8h_source.html#l00166">166</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aabf3ca384568672adc30f70f01c9df10" name="aabf3ca384568672adc30f70f01c9df10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabf3ca384568672adc30f70f01c9df10">&#9670;&nbsp;</a></span>x</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double node::x</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="config_8h_source.html">config.h</a> 第 <a class="el" href="config_8h_source.html#l00161">161</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae26431ed55307715301fdcbe58b3ecf6" name="ae26431ed55307715301fdcbe58b3ecf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae26431ed55307715301fdcbe58b3ecf6">&#9670;&nbsp;</a></span>x0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double node::x0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="config_8h_source.html">config.h</a> 第 <a class="el" href="config_8h_source.html#l00162">162</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad6b92a3350329877401b880c80ba7d54" name="ad6b92a3350329877401b880c80ba7d54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6b92a3350329877401b880c80ba7d54">&#9670;&nbsp;</a></span>y</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double node::y</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>节点物理坐标 </p>
+
+<p class="definition">在文件 <a class="el" href="config_8h_source.html">config.h</a> 第 <a class="el" href="config_8h_source.html#l00161">161</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a48c29196991d57cec0dfe3fc6be5a20a" name="a48c29196991d57cec0dfe3fc6be5a20a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48c29196991d57cec0dfe3fc6be5a20a">&#9670;&nbsp;</a></span>y0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double node::y0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>节点初始物理坐标 </p>
+
+<p class="definition">在文件 <a class="el" href="config_8h_source.html">config.h</a> 第 <a class="el" href="config_8h_source.html#l00162">162</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>F:/C++Code/LagrangianDG_with_SMS/files/<a class="el" href="config_8h_source.html">config.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>
