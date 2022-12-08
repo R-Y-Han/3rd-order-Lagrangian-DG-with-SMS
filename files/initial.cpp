@@ -529,7 +529,7 @@ void node_initialsegment(int i, int j)
         point[i][j].nnext.push_back(antempnext);
         //计算所在边插值的|J|
         double atnext;
-        detJ = o[ifather][jfather].edgedetJacobi(xit,etat,fatherloc,point[i][j].segmentnext[r]);
+        detJ = o[ifather][jfather].edgedetJacobi(xit,etat,point[i][j].q,point[i][j].segmentnext[r]);
         atnext = point[i][j].weightnext[r] * detJ * 2;
         //此时atnext为物理空间上的加权边长，其中乘2是因为参考空间边长为2
         point[i][j].anext.push_back(atnext);
@@ -924,19 +924,19 @@ void initial()
                   + ini_uy_x(xt,yt) * ini_uy_x(xt,yt) + uyt * ini_uy_xx(xt,yt)
                   + ini_p_xx(xt,yt) / ((gammat - 1) * rhot) - ini_p_x(xt,yt) * ini_rho_x(xt,yt) / ((gammat - 1) * rhot * rhot)
                   - (ini_p_x(xt,yt) * ini_rho_x(xt,yt) + ini_p(xt,yt) * ini_rho_xx(xt,yt)) / ((gammat - 1) * rhot * rhot)
-                  + ini_p(xt,yt) * ini_rho_x(xt,yt) * (gammat - 1) * 2 * rhot * ini_rho_x(xt,yt) / (pow((gammat - 1),2) * pow(rhot,4));
+                  + ini_p(xt,yt) * ini_rho_x(xt,yt) * 2 * rhot * ini_rho_x(xt,yt) / ((gammat - 1) * pow(rhot,4));
             
             tauyy = ini_ux_y(xt,yt) * ini_ux_y(xt,yt) + uxt * ini_ux_yy(xt,yt)
                   + ini_uy_y(xt,yt) * ini_uy_y(xt,yt) + uyt * ini_uy_yy(xt,yt)
                   + ini_p_yy(xt,yt) / ((gammat - 1) * rhot) - ini_p_y(xt,yt) * ini_rho_y(xt,yt) / ((gammat - 1) * rhot * rhot)
                   - (ini_p_y(xt,yt) * ini_rho_y(xt,yt) + ini_p(xt,yt) * ini_rho_yy(xt,yt)) / ((gammat - 1) * rhot * rhot)
-                  + ini_p(xt,yt) * ini_rho_y(xt,yt) * (gammat - 1) * 2 * rhot * ini_rho_y(xt,yt) / (pow((gammat - 1),2) * pow(rhot,4));
+                  + ini_p(xt,yt) * ini_rho_y(xt,yt) * 2 * rhot * ini_rho_y(xt,yt) / ((gammat - 1) * pow(rhot,4));
 
-            tauxx = ini_ux_x(xt,yt) * ini_ux_y(xt,yt) + uxt * ini_ux_xy(xt,yt)
+            tauxy = ini_ux_x(xt,yt) * ini_ux_y(xt,yt) + uxt * ini_ux_xy(xt,yt)
                   + ini_uy_x(xt,yt) * ini_uy_y(xt,yt) + uyt * ini_uy_xy(xt,yt)
                   + ini_p_xy(xt,yt) / ((gammat - 1) * rhot) - ini_p_x(xt,yt) * ini_rho_y(xt,yt) / ((gammat - 1) * rhot * rhot)
                   - (ini_p_y(xt,yt) * ini_rho_x(xt,yt) + ini_p(xt,yt) * ini_rho_xy(xt,yt)) / ((gammat - 1) * rhot * rhot)
-                  + ini_p(xt,yt) * ini_rho_x(xt,yt) * (gammat - 1) * 2 * rhot * ini_rho_y(xt,yt) / (pow((gammat - 1),2) * pow(rhot,4));
+                  + ini_p(xt,yt) * ini_rho_x(xt,yt) * 2 * rhot * ini_rho_y(xt,yt) / ((gammat - 1) * pow(rhot,4));
 
             o[i][j].tau[0] = ini_p(xt,yt) / ((gammat - 1) * rhot)
                            + 0.5 * (uxt * uxt + uyt * uyt);

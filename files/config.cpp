@@ -9,8 +9,10 @@
  * 
  */
 
+#include <iostream>
 #include <cmath>
 #include "config.h"
+using namespace std;
 
 /**
  * @brief EOS

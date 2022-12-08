@@ -106,7 +106,15 @@ double ini_p_xy(double x, double y);
 
 double ini_p_yy(double x, double y);
 
-
+/**
+ * @brief 内能解析解
+ * 
+ * @param x 物理横坐标
+ * @param y 物理纵坐标
+ * @param t 时间
+ * @return double 
+ */
+double ana_e(double x, double y, double t);
 /** @} */
 
 

@@ -263,9 +263,7 @@ double ** velocity_matrix(int i, int j)
     {
         Rt[0][r] = R[r][0];
         Rt[1][r] = R[r][1];
-        cout<<Rt[0][r]<<"\t";
     }
-    cout<<endl;
     
     for (r = 0; r<pk; r++)
     {

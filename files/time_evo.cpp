@@ -172,7 +172,7 @@ void one_time_step(double dt)
 
 
     //*************第一次RK*************//
-cout<<"RK1"<<endl;
+//cout<<"RK1"<<endl;
     //下面计算节点速度
     for (i=0; i<=n_point; i++)
     {
@@ -297,7 +297,7 @@ cout<<"RK1"<<endl;
 //*/
 
     //第二次RK
-cout<<endl<<"RK2"<<endl;
+//cout<<endl<<"RK2"<<endl;
     //下面计算节点速度
     for (i=0; i<=n_point; i++)
     {

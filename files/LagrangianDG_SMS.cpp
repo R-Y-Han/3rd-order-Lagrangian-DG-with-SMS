@@ -38,7 +38,7 @@ void normux();
 
 int main()
 {
-    int i, j, k, l;
+    int i, j, k, l, sk, sl;
     initial();
 
     double dt = 1000;
@@ -93,7 +93,7 @@ void norme()
                 e = e - 0.5 * (ux * ux + uy * uy);
                 e = max(1e-9,e);
                 double e_ana;
-                e_ana = ini_p(xt,yt) / ((o[i][j].gamma-1) * ini_rho(xt,yt));
+                e_ana = ana_e(xt,yt,T);
                 temp = temp + (e_ana - e) * (e_ana - e) * jt * Gaussweight[k];
             }
         }

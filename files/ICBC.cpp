@@ -415,3 +415,19 @@ double ini_p_yy(double x, double y)
     }
     return ans;
 }
+
+double ana_e(double x, double y, double t)
+{
+    double ans;
+    switch(testcase)
+    {
+        case shockless_Noh:
+            ans = 1.0 / pow((1-t),4.0 / 3.0);
+            break;
+        
+        default:
+            ans = 0;
+            break;
+    }
+    return ans;
+}
