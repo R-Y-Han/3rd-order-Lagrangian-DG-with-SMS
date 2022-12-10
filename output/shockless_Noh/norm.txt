@@ -1,21 +1,48 @@
-n=5	m=5	T=0.6	Pk=3
-norm=0.000388195
+n=4	m=4	T=0.6	Pk=6
+CFL number = 0.02
+running time = 8s
+norm=0.000118426
 
-n=10	m=10	T=0.6	Pk=3
-norm=7.66576e-05
+n=8	m=8	T=0.6	Pk=6
+CFL number = 0.02
+running time = 62s
+norm=1.35892e-005
 
-n=10	m=10	T=0.6	Pk=6
-norm=7.76029e-05
+n=16	m=16	T=0.6	Pk=6
+CFL number = 0.02
+running time = 495s
+norm=1.97284e-006
 
-n=20	m=20	T=0.6	Pk=6
-norm=0.000174816
+//ERROR
+n=32	m=32	T=0.6	Pk=6
+CFL number = 0.02
+running time = 4198s
+norm=5.34966e+040
 
-n=20	m=20	T=0.2	Pk=6
-norm=4.27527e-07
+//T=0.3
+n=32	m=32	T=0.3	Pk=6
+CFL number = 0.02
+running time = 1745s
+norm=3.3269e-008
 
-n=10	m=10	T=0.2	Pk=6
-norm=2.9812e-06
+n=16	m=16	T=0.3	Pk=6
+CFL number = 0.02
+running time = 205s
+norm=2.97744e-007
 
-n=5	m=5	T=0.2	Pk=6
-norm=2.69177e-05
+n=8	m=8	T=0.3	Pk=6
+CFL number = 0.02
+running time = 20s
+norm=3.31383e-006
+
+n=4	m=4	T=0.3	Pk=6
+CFL number = 0.02
+running time = 2s
+norm=4.31092e-005
+
+//
+n=32	m=32	T=0.3	Pk=6
+CFL number = 0.01
+running time = 3599s
+norm=1.86101e-008
 

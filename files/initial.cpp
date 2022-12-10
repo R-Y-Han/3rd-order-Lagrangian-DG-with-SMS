@@ -820,6 +820,9 @@ void initial()
                 case shockless_Noh:
                     o[i][j].gamma = 5.0 / 3.0;
                     break;
+                case Taylor_Green_vortex:
+                    o[i][j].gamma = 7.0 / 5.0;
+                    break;
                 default:
                     o[i][j].gamma = 5.0 / 3.0;
                     break;

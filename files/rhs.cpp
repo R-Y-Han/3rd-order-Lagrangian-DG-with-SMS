@@ -210,7 +210,30 @@ double ** velocity_matrix(int i, int j)
             }
         }
     }
+if (abs(R[0][0]) > 0.0001 || abs(R[0][1]) > 0.0001)
+            {
+                cout<<R[0][0]<<"\t"<<R[0][1]<<endl;
+                for (s=0; s<9; s++)
+                {
+                    pi = o[i][j].vertex[s] / (m_point + 1);
+                    pj = o[i][j].vertex[s] % (m_point + 1);
+                    for (r=0; r<point[pi][pj].neighbor_subcell.size(); r++)
+                    {
+                        cout<<"point "<<point[pi][pj].q<<"\t"<<pi<<"\t"<<pj<<endl;
+                        cout<<"last point "<<point[pi][pj].segmentlast[r]<<endl;
+                        cout<<"flast"<<"\t"<<point[pi][pj].flast[r][0]<<"\t"<<point[pi][pj].flast[r][1]<<endl;
+                        cout<<"length last "<<"\t"<<point[pi][pj].alast[r] / point[pi][pj].weightlast[r]<<endl;
+                        cout<<endl;
+                        cout<<"next point "<<point[pi][pj].segmentnext[r]<<endl;
+                        cout<<"fnext"<<"\t"<<point[pi][pj].fnext[r][0]<<"\t"<<point[pi][pj].fnext[r][1]<<endl;
+                        cout<<"length next "<<"\t"<<point[pi][pj].anext[r] / point[pi][pj].weightnext[r]<<endl;
 
+                    }
+                    
+                }
+                    
+                system("pause");
+            }
     //下面计算体积分
     for (r=0; r<gpn; r++)
     {
@@ -367,6 +390,31 @@ double * energy_matrix(int i, int j)
         delete[] J[0];
         delete[] J[1];
         delete[] J;
+    }
+
+    //若是Taylor-Green vortex还需要计算源项
+    if (testcase == Taylor_Green_vortex)
+    {
+        for (r=0; r<gpn; r++)
+        {
+            xit = Gausspoint_xi[r];
+            etat = Gausspoint_eta[r];
+
+            double xt, yt, jt;
+            xt = o[i][j].phi_x(xit,etat);
+            yt = o[i][j].phi_y(xit,etat);
+            jt = o[i][j].detJacobi(xit,etat);
+
+            double src;
+            src = PI * ( cos(3*PI*xt)*cos(PI*yt)
+                        - cos(3*PI*yt)*cos(PI*xt) ) / (4*(o[i][j].gamma-1));
+            
+            for (ba=0; ba<pk; ba++)
+            {
+                R[ba] = R[ba] + o[i][j].Psi(ba,xit,etat)
+                              * src * jt * Gaussweight[r];
+            }
+        }
     }
 
     return R;

@@ -22,12 +22,12 @@ using namespace std;
 
 const int pk = 6;   /**< 基函数个数*/
 
-const int n_element = 5;   /**< 横向网格个数*/
-const int m_element = 5;   /**< 纵向网格个数*/
+const int n_element = 32;   /**< 横向网格个数*/
+const int m_element = 32;   /**< 纵向网格个数*/
 const int n_point = 2 * n_element;   /**< 横向节点个数*/
 const int m_point = 2 * m_element;   /**< 纵向节点个数*/
 
-const double T = 0.2;   /**< 终止时间*/
+const double T = 0.6;   /**< 终止时间*/
 
 enum test_cases{
     shockless_Noh = 1,
@@ -36,7 +36,7 @@ enum test_cases{
 
 const test_cases testcase = shockless_Noh;  /**< 算例*/
 
-const double C_cfl = 0.1;   /**< CFL参数*/
+const double C_cfl = 0.01;   /**< CFL参数*/
 const double C_m = 1.01;    /**< 时间步长相关参数*/
 
 const double X = 1; /**< 计算区域横坐标大小*/
@@ -44,10 +44,6 @@ const double Y = 1; /**< 计算区域纵坐标大小*/
 
 const double hx = X / (double ) n_point;  /**< 横向空间步长*/
 const double hy = Y / (double ) m_point;  /**< 纵向空间步长*/
-
-
-
-const double c_CFL = 0.1;   /**< CFL条件系数*/
 
 const double nu_alpha = 0.6;  /**< 比容限制器参数*/
 const double ux_alpha = 0.6;  /**< 横向速度限制器参数*/

@@ -259,20 +259,23 @@ void nodal_velocity_corner_force(int i, int j)
         }
         subuc[r][0] = uc[0];
         subuc[r][1] = uc[1];
-/*if (abs(uc[0])>1)
-{
-    cout<<"point "<<point[i][j].q<<"\t"<<xit<<"\t"<<etat<<endl;
-    for (s=0; s<pk; s++)
-    {
-        cout<<o[fatherk][fatherl].ux[s]
-            <<"\t"<<o[fatherk][fatherl].Psi(s,xit,etat)<<endl;
-    }
-    cout<<endl<<endl;
-}*/
+
         //判断激波方向
         double ex, ey;
         ex = uavg[0] - uc[0];
         ey = uavg[1] - uc[1];
+        double norm;
+        norm = ex * ex + ey * ey;
+        norm = sqrt(norm);
+        if (norm < 1e-6)
+        {
+            ex = 1e-9;
+            ey = 1e-9;
+        }
+        else{
+            ex = ex / norm;
+            ey = ey / norm;
+        }
 
         //下面计算amu，其中节点速度用速度平均近似
         //单元中心密度
@@ -280,8 +283,8 @@ void nodal_velocity_corner_force(int i, int j)
         rho_z = 1.0 / o[fatherk][fatherl].nu[0];
 
         //上一节点
-        temp = ex * point[i][j].nlast[r][0]
-             + ey * point[i][j].nlast[r][1];
+        temp = (uavg[0] - uc[0]) * point[i][j].nlast[r][0]
+             + (uavg[1] - uc[1]) * point[i][j].nlast[r][1];
         
         mu = rho_z * (o[fatherk][fatherl].c_center
                       + (o[fatherk][fatherl].gamma + 1) * temp / 2.0);
@@ -292,8 +295,8 @@ void nodal_velocity_corner_force(int i, int j)
         amulast[r] = point[i][j].alast[r] * mu;
 
         //下一节点
-        temp = ex * point[i][j].nnext[r][0]
-             + ey * point[i][j].nnext[r][1];
+        temp = (uavg[0] - uc[0]) * point[i][j].nnext[r][0]
+             + (uavg[1] - uc[1]) * point[i][j].nnext[r][1];
         
         mu = rho_z * (o[fatherk][fatherl].c_center
                       + (o[fatherk][fatherl].gamma + 1) * temp / 2.0);
@@ -321,18 +324,6 @@ void nodal_velocity_corner_force(int i, int j)
 
         p_sms = EOS(o[fatherk][fatherl].gamma,rho_sms,e);
         sigma = - p_sms;
-/*if (abs(e - 0.998333)<1e-5)
-{
-    cout<<"point "<<i<<"\t"<<j<<"\t"<<point[i][j].ifedge<<"\t"<<point[i][j].boundary<<endl;
-    cout<<"element "<<fatherk<<"\t"<<fatherl<<"\t"<<o[fatherk][fatherl].q<<endl;
-    cout<<"velocity "<<uc[0]<<"\t"<<uc[1]<<endl;
-    cout<<"e="<<e<<"\t"<<"p="<<p_sms<<endl;
-    for (s=0; s<pk; s++)
-    {
-        cout<<o[fatherk][fatherl].tau[s]<<endl;
-    }
-    cout<<endl;
-}*/
 
         asigmanxlast[r] = point[i][j].alast[r] * sigma * point[i][j].nlast[r][0];
         asigmanylast[r] = point[i][j].alast[r] * sigma * point[i][j].nlast[r][1];
@@ -361,7 +352,7 @@ void nodal_velocity_corner_force(int i, int j)
         bottom = bottom + amulast[r] + amunext[r];
     }
 
-    if (abs(bottom) < 1e-9)
+    if (abs(bottom) < 1e-6)
     {
         point[i][j].upstarx = uavg[0];
         point[i][j].upstary = uavg[1];
@@ -376,9 +367,6 @@ void nodal_velocity_corner_force(int i, int j)
         //边界点
         BCvelocity(i,j,bottom);
     }
-
-//point[i][j].upstarx = ini_ux(point[i][j].x0,point[i][j].y0);
-//point[i][j].upstary = ini_uy(point[i][j].x0,point[i][j].y0);
 
     //下面更新每个子网格两点上的corner force
     double flx, fly, fnx, fny;
@@ -402,24 +390,24 @@ void nodal_velocity_corner_force(int i, int j)
 
         point[i][j].fnext[r][0] = fnx;
         point[i][j].fnext[r][1] = fny;
-
-        test1 = test1 + flx + fnx;
-        test2 = test2 + fly + fny;
     }
-    if (point[i][j].boundary != 1)
+    if (abs(point[i][j].upstarx) > 1.1 || abs(point[i][j].upstary) > 1.1)
     {
-        if (abs(test1)>1e-5 || abs(test2)>1e-5)
         {
             cout<<"point "<<point[i][j].q<<"\t"<<i<<"\t"<<j<<endl;
             cout<<"if edge "<<point[i][j].ifedge<<endl;
-            cout<<"sum f "<<test1<<"\t"<<test2<<endl;
+            cout<<"velocity"<<point[i][j].upstarx<<"\t"<<point[i][j].upstary<<endl;
             for (r=0; r<ncell; r++)
             {
                 cout<<"amu r "<<amulast[r]<<"\t"<<amunext[r]<<endl;
+                cout<<"a r "<<point[i][j].alast[r] / point[i][j].weightlast[r]
+                    <<"\t"<<point[i][j].anext[r] / point[i][j].weightnext[r]<<endl;
+                cout<<"density SMS "<<density_SMS(point[i][j].neighbor_subcell[r]/m_element,point[i][j].neighbor_subcell[r]%m_element)<<endl;
+                cout<<"uc r"<<subuc[r][0]<<"\t"<<subuc[r][1]<<endl;
             }
             cout<<endl;
+            
         }
-        
     }
 
     delete[] amulast;

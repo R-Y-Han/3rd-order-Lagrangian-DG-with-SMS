@@ -419,6 +419,15 @@ double Omega::edgedetJacobi(double xi, double eta, int pointa, int pointb)
         return 0;
     }
 
+    if (pointa == 25 && ans > 90)
+    {
+        cout<<"length to "<<pointb<<endl;
+        cout<<"point number "<<a1<<"\t"<<a2<<"\t"<<a3<<endl;
+        cout<<"location x  "<<this->vx[a1]<<"\t"<<this->vx[a2]<<"\t"<<this->vx[a3]<<endl;
+        cout<<"location y  "<<this->vy[a1]<<"\t"<<this->vy[a2]<<"\t"<<this->vy[a3]<<endl;
+        cout<<ans<<endl;
+    }
+
     return ans;
 }
 

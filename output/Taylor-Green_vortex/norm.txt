@@ -1,0 +1,20 @@
+n=5	m=5	T=0.2	Pk=6
+CFL number = 0.01
+running time = 11s
+norm=6.81353
+
+n=10	m=10	T=0.2	Pk=6
+CFL number = 0.1
+running time = 23s
+norm=1.17944e+046
+
+n=10	m=10	T=0.2	Pk=6
+CFL number = 0.02
+running time = 62s
+norm=3.59204e+008
+
+n=5	m=5	T=0.2	Pk=6
+CFL number = 0.02
+running time = 5s
+norm=6.81553
+
